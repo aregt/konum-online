@@ -3,3 +3,4 @@ _arsiv/
 config/
 .DS_Store
 Thumbs.db
+.gstack/

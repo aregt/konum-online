@@ -5,7 +5,7 @@
     "lang": "tr",
     "contact": {
       "phone": "TODO",
-      "whatsapp": "TODO",
+      "whatsapp": "905000000000",
       "email": "TODO",
       "address": "TODO",
       "instagram": "TODO",
@@ -69,25 +69,25 @@
           {
             "value": "31",
             "prefix": "%",
-            "title": "Daha fazla telefon araması",
-            "subtitle": "Ortalama artış"
+            "title": "Telefon arama eğilimi",
+            "subtitle": "Optimize profillerde sektör ortalaması"
           },
           {
             "value": "42",
             "prefix": "%",
-            "title": "Daha fazla yol tarifi isteği",
-            "subtitle": "Ortalama artış"
+            "title": "Yol tarifi eğilimi",
+            "subtitle": "Yerel arama araştırmaları çerçevesinde"
           },
           {
             "value": "4.8",
             "decimals": 1,
-            "title": "Ortalama yorum puanı",
-            "subtitle": "Yönetilen profillerde"
+            "title": "Yorum puanı bandı",
+            "subtitle": "Aktif profillerde gözlemlenen ortalama"
           },
           {
-            "value": "5-10 Kat",
-            "title": "Daha fazla görünürlük",
-            "subtitle": "Hedef mahallelerde"
+            "value": "3–5×",
+            "title": "Yerel görünürlük artışı",
+            "subtitle": "Hiper-yerel odakta literatür aralığı"
           }
         ]
       },
@@ -111,43 +111,71 @@
         ],
         "phoneAlt": "Konum Online mobil görünümü"
       },
-      "process": {
-        "title": "Nasıl Çalışıyoruz?",
-        "subtitle": "Sadece görünür olmanızı değil, seçilir olmanızı sağlıyoruz.",
-        "steps": [
+      "problem": {
+        "tag": "Problem",
+        "title": "Neden dükkânınızın önünde görünmek yetmez?",
+        "paragraphs": [
+          "Google Haritalar'da kendi kapınızın önünde görünür olmak, müşterinin sizi gerçekten aradığı her noktada görünür olduğunuz anlamına gelmez. Profilinizi bir kez açıp bıraktığınızda algoritma sizi canlı bir işletme olarak okumaz; eksik alanlar, bayat yorumlar ve geniş hizmet alanı seçimi görünürlüğü mahalle mahalle dağıtır.",
+          "2026 yerel arama standartlarında başarı, sıra numarasından çok telefon araması, yol tarifi ve seçilme oranıyla ölçülür. İşletme sahipleri çoğu zaman sıralamayı yalnızca dükkan içinden kontrol eder; oysa müşteri birkaç sokak öteden arama yaptığında sizi hiç görmez. Bu görünmezlik şoku, kayıp talebin sessiz tarafıdır.",
+          "Konum Online olarak önce nerede kaybolduğunuzu grid ve profil verisiyle gösterir, sonra doğru bölgelerde güçlenmeniz için net bir yol haritası çıkarırız."
+        ],
+        "cards": [
           {
-            "number": 1,
-            "title": "Pazar ve Rekabet Analizi",
-            "description": "Dijital konumunuzu ve rakiplerinizi analiz ederek nerede müşteri kaybettiğinizi net verilerle ortaya koyuyoruz."
+            "title": "Görünmezlik şoku",
+            "description": "Dükkanınızın önünde iyi sıralama, yan mahalle veya farklı arama niyetinde kaybolmanızı engellemez. Grid analizi, müşterinin gerçekten baktığı noktaları gösterir."
           },
           {
-            "number": 2,
-            "title": "Dijital Varlık ve Altyapı Optimizasyonu",
-            "description": "İnternet kimliğinizi tutarlı hale getiriyor; doğru kategori ve veri yapısıyla dijital otoritenizi inşa ediyoruz."
+            "title": "\"Her yere hizmet\" yanılgısı",
+            "description": "100 km yarıçap veya boş hizmet alanı, Google'a dağınık bir sinyal verir. Gerçekten hizmet verdiğiniz 5–7 mahallede otorite kurmak daha güçlü sonuç üretir."
           },
           {
-            "number": 3,
-            "title": "Tercih Edilme Stratejisi ve Güven İnşası",
-            "description": "Görünürlükten öteye geçip, hem kullanıcılar hem de algoritmalar nezdinde güven inşa ederek tercih edilmenizi sağlıyoruz."
-          },
-          {
-            "number": 4,
-            "title": "Bütünlük Sağlama",
-            "description": "İnternetteki tüm varlıklarınızı birbirini doğrulayan, entegre bir ekosisteme dönüştürüyoruz."
-          },
-          {
-            "number": 5,
-            "title": "Sürdürülebilir Sistem İnşası",
-            "description": "Geçici bir kampanya değil; zamanla kendi imkanlarınızla da yönetebileceğiniz yaşayan bir sistem kuruyoruz."
+            "title": "Sıralama ≠ müşteri",
+            "description": "Üst sıralama tek başına telefonu çaldırmaz. Güncel yorumlar, doğru kategori, tutarlı bilgiler ve güven sinyalleri olmadan görünürlük dönüşüme dönüşmez."
           }
         ]
       },
+      "visibilityGrid": {
+        "tag": "Görünürlük Izgarası",
+        "title": "Mahalle mahalle nerede görünüyorsunuz?",
+        "paragraph": "Kadıköy / Moda'da örnek bir kafe senaryosu: aynı arama, farklı noktalarda farklı sıralama. Yeşil iyi, kırmızı zayıf görünürlük bandını temsil eder.",
+        "disclaimer": "Bu alan örnek gösterim / demo amaçlıdır.",
+        "cta": "Görüşme Planlayın",
+        "ctaHref": "/iletisim/"
+      },
+      "process": {
+        "title": "Nasıl Çalışıyoruz?",
+        "subtitle": "Üç net adımda: önce veriyi görürüz, sonra profilinizi düzenleriz, her ay izler ve iyileştiririz.",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Analiz",
+            "description": "Nerede görünmüyorsunuz, müşteri nereye gidiyor — grid ve profil verisiyle net ortaya koyarız."
+          },
+          {
+            "number": 2,
+            "title": "Kurulum & Optimizasyon",
+            "description": "Profil, kategori, görsel, yorum ve web sitenizi tek sistem olarak düzenleriz."
+          },
+          {
+            "number": 3,
+            "title": "Aylık Yönetim",
+            "description": "Görünürlüğünüzü izler, yorumlara yanıt verir ve her ay somut aksiyon alırız."
+          }
+        ]
+      },
+      "dashboard": {
+        "tag": "Performans Özeti",
+        "title": "İşletme sahibinin görmek istediği metrikler",
+        "paragraph": "Telefon, yol tarifi, yorum tazeliği ve profil tamlığı — tek bakışta öncelikleriniz.",
+        "disclaimer": "Bu alan örnek gösterim / demo amaçlıdır."
+      },
       "cases": {
-        "tag": "Gerçek Sonuçlar",
-        "title": "Gerçek İşletmeler, Gerçek Büyüme",
-        "titleLines": ["Gerçek İşletmeler,", "Gerçek Büyüme"],
-        "paragraph": "Doğru strateji, istikrarlı yönetim ve sürekli optimizasyon ile güçlü sonuçlar.",
-        "cta": "Tüm Başarı Hikayelerimizi Görün",
+        "tag": "Örnek Senaryolar",
+        "title": "Örnek Senaryolar: Doğru Yönetim Ne Kazandırır?",
+        "titleLines": ["Örnek Senaryolar:", "Doğru Yönetim Ne Kazandırır?"],
+        "paragraph": "Hiper-yerel odak, profil disiplini ve düzenli optimizasyonla mümkün olan senaryolar — somut metriklerle.",
+        "badge": "Örnek Senaryo",
+        "cta": "Ön Değerlendirme İsteyin",
         "items": [
           {
             "name": "Moda Diş Kliniği",
@@ -179,39 +207,69 @@
           "after": "SONRA"
         }
       },
+      "istanbulFocus": {
+        "tag": "İstanbul Odağı",
+        "title": "Her semtte değil, doğru bölgelerde güçlenin.",
+        "paragraph": "İstanbul'un her ilçesinde aynı rekabet yoktur. Hizmet alanınızı gerçek talebe göre daraltıp Moda'da güçlü, Üsküdar'da zayıf olduğunuz noktaları ayrı ayrı yönetiriz."
+      },
+      "faq": {
+        "tag": "SSS",
+        "title": "Sık sorulan sorular",
+        "paragraph": "Google Haritalar yönetimi, süreç ve beklentiler hakkında net cevaplar.",
+        "items": [
+          {
+            "question": "Neden bir ajansa ihtiyacım var?",
+            "answer": "Profil açıp bırakmak yetmez: kategori seçimi, yorum tazeliği, NAP tutarlılığı ve grid takibi sürekli güncellenen bir iş. Günlük operasyonunuz varken algoritma değişimlerini izlemek zordur; ajans bu disiplini sizin adınıza kurar."
+          },
+          {
+            "question": "Görünürlük gridi nedir, ne işe yarar?",
+            "answer": "Grid, aynı aramanın farklı sokaklarda nasıl sıralandığını gösterir. Dükkan önünde görünürken çevre mahallede kayboluyorsanız, hizmet alanı ve içerik stratejinizi buna göre ayarlarız."
+          },
+          {
+            "question": "Sonuçları ne zaman görürüm?",
+            "answer": "Profil düzenlemeleri birkaç hafta içinde sinyal üretmeye başlar; telefon ve yol tarifi eğilimleri genelde 60–90 gün içinde okunabilir hale gelir. Süre sektör ve rekabet yoğunluğuna göre değişir."
+          },
+          {
+            "question": "Belirli bir sıra vaadi veriyor musunuz?",
+            "answer": "Hayır. Sıra numarası yerine telefon araması, yol tarifi, profil etkileşimi ve seçilme oranına odaklanırız. Grid ve aylık raporlarla nerede güçlendiğinizi şeffaf paylaşırız."
+          },
+          {
+            "question": "Yorumları nasıl yönetiyorsunuz?",
+            "answer": "Yanıt hızı, yorum tazeliği ve hizmet adının doğal geçtiği içerikleri hedefleriz. Sahte veya manipülatif yöntemler kullanmayız; sürdürülebilir bir yorum akışı kurarız."
+          },
+          {
+            "question": "Fiyatlandırma nasıl işler?",
+            "answer": "İşletme büyüklüğü, lokasyon sayısı ve ihtiyaç duyulan hizmet kapsamına göre aylık paketler sunarız. Ön değerlendirme sonrası net teklif paylaşılır."
+          },
+          {
+            "question": "Hangi ilçelerde çalışıyorsunuz?",
+            "answer": "İstanbul genelinde hizmet veriyoruz; strateji her zaman hedef mahalle ve ilçe bazında kurulur. Tek bir geniş yarıçap yerine gerçekten hizmet verdiğiniz bölgelere odaklanırız."
+          },
+          {
+            "question": "Web sitem olmadan da ilerleyebilir miyim?",
+            "answer": "Evet, ancak web sitesi ve harita profili uyumlu olduğunda sonuçlar güçlenir. Gerekirse önce profil ve grid odaklı başlayıp web tarafını aşamalı ekleriz."
+          }
+        ]
+      },
       "testimonials": {
         "published": false,
         "title": "Müşterilerimiz Ne Diyor?",
-        "items": [
-          {
-            "quote": "Haritalarda görünür olmak için ne yapmamız gerektiğini ilk kez bu kadar net anladık. Aramalarımız ciddi şekilde arttı.",
-            "name": "Ayşe K.",
-            "business": "Moda Coffee"
-          },
-          {
-            "quote": "Sürekli ilgililer, yorumlarımızı yönetiyorlar, profilimizi canlı tutuyorlar. Farkı net hissediyoruz.",
-            "name": "Mehmet T.",
-            "business": "Üsküdar Klinik"
-          },
-          {
-            "quote": "Önceden varlığımız yok gibiydi. Şimdi mahallemizde bizi bulamayan müşteri kalmadı.",
-            "name": "Emre Y.",
-            "business": "Kadıköy Oto Servis"
-          }
-        ]
+        "items": []
       },
       "cta": {
         "title": "Haritalarda Görünmüyorsanız, Müşterileriniz Rakiplerinizdedir.",
         "titleLines": ["Haritalarda Görünmüyorsanız,", "Müşterileriniz Rakiplerinizdedir."],
         "paragraph": "İşletmenizi birlikte güçlendirelim.",
         "checks": [
-          "Ücretsiz ön değerlendirme",
+          "Hızlı ön değerlendirme",
           "Kişiye özel strateji",
           "Hızlı geri dönüş"
         ],
         "actions": {
           "primary": "Ön Değerlendirme İsteyin",
-          "secondary": "WhatsApp'tan Yazın"
+          "primaryHref": "/iletisim/",
+          "secondary": "WhatsApp'tan Yazın",
+          "secondaryHref": "https://wa.me/905000000000?text=Merhaba%2C%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
         }
       }
     }

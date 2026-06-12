@@ -115,8 +115,98 @@ function initCounters() {
   if (statsStrip) counterObserver.observe(statsStrip);
 }
 
+function rankToColor(rank) {
+  if (rank <= 3) return "#22c55e";
+  if (rank <= 7) return "#84cc16";
+  if (rank <= 12) return "#eab308";
+  if (rank <= 18) return "#f97316";
+  return "#ef4444";
+}
+
+function renderVisibilityGrid() {
+  const mount = document.getElementById("visibility-grid-mount");
+  const metaMount = document.getElementById("visibility-grid-meta");
+  const insightsMount = document.getElementById("visibility-insights-mount");
+  const data = window.KonumDemoData && window.KonumDemoData.visibilityGrid;
+  if (!mount || !data) return;
+
+  if (metaMount) {
+    metaMount.innerHTML = `
+      <strong>${data.business}</strong>
+      <span>${data.area}</span>
+      <span class="visibility-query">"${data.query}" araması</span>
+    `;
+  }
+
+  const size = data.gridSize;
+  mount.style.setProperty("--grid-size", String(size));
+  mount.setAttribute(
+    "aria-label",
+    `${data.business} için ${data.area} bölgesinde örnek görünürlük ızgarası`
+  );
+
+  mount.innerHTML = data.cells
+    .map((cell) => {
+      const classes = ["grid-cell"];
+      if (cell.isBusiness) classes.push("is-business");
+      return `<span class="${classes.join(" ")}" style="--rank-color:${rankToColor(cell.rank)}" title="Sıra: ${cell.rank}" aria-label="Sıra ${cell.rank}"></span>`;
+    })
+    .join("");
+
+  if (insightsMount && data.insights) {
+    insightsMount.innerHTML = `
+      <div class="insight-block">
+        <h3>Bu gridde ne görüyoruz</h3>
+        <p>${data.insights.observation}</p>
+      </div>
+      <div class="insight-block">
+        <h3>Ne yapılmalı</h3>
+        <p>${data.insights.action}</p>
+      </div>
+    `;
+  }
+}
+
+function trendIcon(trend) {
+  if (trend === "up") return "↑";
+  if (trend === "down") return "↓";
+  if (trend === "flat") return "→";
+  return "•";
+}
+
+function renderDashboard() {
+  const mount = document.getElementById("dashboard-mount");
+  const data = window.KonumDemoData && window.KonumDemoData.dashboard;
+  if (!mount || !data) return;
+
+  mount.innerHTML = data.metrics
+    .map((metric) => {
+      const isActions = metric.id === "recommended-actions" && metric.actions;
+      const actionsList = isActions
+        ? `<ul class="metric-actions">${metric.actions.map((item) => `<li>${item}</li>`).join("")}</ul>`
+        : "";
+
+      return `
+        <article class="metric-card">
+          <div class="metric-head">
+            <span class="metric-label">${metric.label}</span>
+            <span class="metric-trend trend-${metric.trend}" aria-hidden="true">${trendIcon(metric.trend)}</span>
+          </div>
+          <div class="metric-value">
+            <strong>${metric.value}</strong><span>${metric.unit || ""}</span>
+          </div>
+          <p class="metric-trend-label">${metric.trendLabel}</p>
+          ${actionsList}
+        </article>
+      `;
+    })
+    .join("");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initReveal();
   initCounters();
+  renderVisibilityGrid();
+  renderDashboard();
 });

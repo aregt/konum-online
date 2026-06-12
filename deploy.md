@@ -77,3 +77,46 @@ Hesap açıldığında yalnızca `content/content.json` içindeki `site.analytic
 - **Form mail gitmiyor:** `config.php` yollarını kontrol edin; `noreply@konum.online` hesabının var olduğundan emin olun.
 - **404 çalışmıyor:** `.htaccess` yüklendi mi, `AllowOverride` açık mı kontrol edin.
 - **CSS/JS eski görünüyor:** Tarayıcı önbelleğini temizleyin veya gizli pencerede deneyin.
+
+## Otomatik yedek + FTP (commit sonrası)
+
+Her commit’ten sonra sunucudan yedek alıp yeni dosyaları yüklemek için:
+
+### 1. FTP bilgilerini ayarlayın
+
+```powershell
+copy .ftp-deploy.example.env .ftp-deploy.env
+# .ftp-deploy.env içinde FTP_PASS doldurun (bu dosya git'e girmez)
+```
+
+### 2. Manuel deploy
+
+```powershell
+.\scripts\deploy.ps1
+```
+
+- Önce sunucudaki site `_backups/YYYY-MM-DD_HH-mm-ss/` altına indirilir
+- Sonra yerel dosyalar FTP’ye yüklenir
+- `form/config.php` sunucuda varsa **üzerine yazılmaz**
+
+Sadece yedek veya sadece yükleme:
+
+```powershell
+.\scripts\deploy.ps1 -NoUpload   # yalnızca yedek
+.\scripts\deploy.ps1 -NoBackup   # yedeksiz hızlı yükleme
+```
+
+### 3. Her commit’te otomatik çalıştırma (isteğe bağlı)
+
+```powershell
+.\scripts\install-git-hooks.ps1
+```
+
+Bundan sonra her `git commit` sonrası `deploy.ps1` çalışır. `.ftp-deploy.env` yoksa hook sessizce atlanır.
+
+Hook’u kaldırmak: `.git/hooks/post-commit` dosyasını silin.
+
+### Güvenlik
+
+- FTP şifresini **asla** repoya eklemeyin; yalnızca `.ftp-deploy.env` (gitignore’da)
+- Eski yedekler `KEEP_BACKUPS` ile sınırlanır (varsayılan 10)

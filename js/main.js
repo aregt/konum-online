@@ -132,6 +132,7 @@ function renderVisibilityGrid() {
 
   if (metaMount) {
     metaMount.innerHTML = `
+      <span class="xray-badge" aria-hidden="true">Görünürlük Röntgeni · Demo</span>
       <strong>${data.business}</strong>
       <span>${data.area}</span>
       <span class="visibility-query">"${data.query}" araması</span>
@@ -156,7 +157,7 @@ function renderVisibilityGrid() {
   if (insightsMount && data.insights) {
     insightsMount.innerHTML = `
       <div class="insight-block">
-        <h3>Bu haritada ne görüyoruz</h3>
+        <h3>Röntgen ne gösteriyor</h3>
         <p>${data.insights.observation}</p>
       </div>
       <div class="insight-block">

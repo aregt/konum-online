@@ -1749,6 +1749,21 @@
   font-size: 1rem;
 }
 
+.xray-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border: 1px solid rgba(85, 225, 152, 0.45);
+  border-radius: 999px;
+  color: #55e198;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  flex-basis: 100%;
+  max-width: max-content;
+}
+
 .visibility-query {
   color: #55e198;
 }

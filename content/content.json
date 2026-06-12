@@ -165,11 +165,11 @@
         ]
       },
       "visibilityGrid": {
-        "tag": "Görünürlük Haritası",
+        "tag": "Görünürlük Röntgeni",
         "title": "Google'da tek bir sıralamanız yok.",
-        "paragraph": "Sıralamanız, arayanın konumuna göre değişir. Kadıköy / Moda'da örnek bir kafe senaryosu: aynı arama, farklı noktalarda farklı sıralama. Yeşil iyi, kırmızı zayıf görünürlük bandını temsil eder.",
+        "paragraph": "Sıralamanız, arayanın konumuna göre değişir. Görünürlük Röntgeni bunu mahalle mahalle görünür kılar — Kadıköy / Moda'da örnek bir kafe senaryosu: aynı arama, farklı noktalarda farklı sıralama. Yeşil iyi, kırmızı zayıf görünürlük bandını temsil eder.",
         "disclaimer": "Bu alan örnek gösterim / demo amaçlıdır.",
-        "cta": "Görüşme Planlayın",
+        "cta": "Görünürlük Röntgeni İsteyin",
         "ctaHref": "/iletisim/"
       },
       "process": {
@@ -194,9 +194,9 @@
         ]
       },
       "dashboard": {
-        "tag": "Performans Özeti",
-        "title": "İşletme sahibinin görmek istediği metrikler",
-        "paragraph": "Telefon, yol tarifi, yorum tazeliği ve profil tamlığı — tek bakışta öncelikleriniz.",
+        "tag": "Aylık Değerlendirme",
+        "title": "Sıralama raporu değil, işinizin gerçek göstergeleri",
+        "paragraph": "Telefon araması, yol tarifi, yorum tazeliği, profil tamlığı — bu veriler Google İşletme Profili'nin kendi kayıtlarından gelir. Her ay birlikte bakar, sonraki adıma birlikte karar veririz.",
         "disclaimer": "Bu alan örnek gösterim / demo amaçlıdır."
       },
       "cases": {

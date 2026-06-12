@@ -5,3 +5,5 @@ form/config.php
 .DS_Store
 Thumbs.db
 .gstack/
+_backups/
+.ftp-deploy.env

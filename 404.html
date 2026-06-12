@@ -1,16 +1,99 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sayfa bulunamadı — Konum Online</title>
+  <title>Sayfa bulunamadı | Konum Online</title>
+  <meta name="description" content="Aradığınız sayfa bulunamadı. Konum Online ana sayfasına veya hizmetlerimize dönün.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop stop-color='%236bf49e'/%3E%3Cstop offset='1' stop-color='%231faf66'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M16 2c-5 0-9 4-9 9 0 7 9 19 9 19s9-12 9-19c0-5-4-9-9-9Zm0 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-  <main class="container" style="padding:4rem 0;min-height:60vh">
-    <h1>Sayfa bulunamadı</h1>
-    <p>Aradığınız sayfa mevcut değil veya taşınmış olabilir.</p>
-    <p><a class="btn btn-primary" href="/">Ana sayfaya dön</a></p>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img class="brand-pin" src="/assets/Logo_White.svg" alt="Konum Online logo" width="60" height="60">
+        <span>Konum Online</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="site-nav">
+        <a href="/google-haritalar-optimizasyonu/">Google Haritalar</a>
+        <a href="/google-isletme-profili-yonetimi/">İşletme Profili</a>
+        <a href="/yerel-seo-istanbul/">Yerel SEO</a>
+        <a href="/#process">Nasıl Çalışırız?</a>
+        <a href="/iletisim/">İletişim</a>
+        <a class="btn btn-primary nav-cta-mobile" href="/iletisim/">Ön Değerlendirme İsteyin</a>
+      </nav>
+      <a class="btn btn-primary nav-cta-desktop" href="/iletisim/">Ön Değerlendirme İsteyin</a>
+    </div>
+  </header>
+
+  <main class="not-found-section">
+    <div class="container">
+      <div class="section-tag">404</div>
+      <h1>Sayfa bulunamadı</h1>
+      <p>Aradığınız sayfa taşınmış, kaldırılmış veya hiç var olmamış olabilir. Ana sayfadan devam edebilir veya
+        hizmetlerimizi inceleyebilirsiniz.</p>
+      <div class="not-found-links">
+        <a class="btn btn-primary" href="/">Ana Sayfa</a>
+        <a class="btn btn-outline" href="/google-haritalar-optimizasyonu/">Google Haritalar</a>
+        <a class="btn btn-outline" href="/google-isletme-profili-yonetimi/">İşletme Profili</a>
+        <a class="btn btn-outline" href="/yerel-seo-istanbul/">Yerel SEO</a>
+        <a class="btn btn-outline" href="/iletisim/">İletişim</a>
+      </div>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <img class="brand-pin" src="/assets/Logo_White.svg" alt="Konum Online logo" width="48" height="48">
+          <span>Konum Online</span>
+        </a>
+        <p>İstanbul'daki işletmeler için Google Haritalar görünürlüğü ve yerel büyüme.</p>
+      </div>
+      <div class="footer-block footer-nap">
+        <h3>İletişim</h3>
+        <p><strong>Tel:</strong> <a href="tel:TODO">TODO</a></p>
+        <p><strong>E-posta:</strong> <a href="mailto:TODO">TODO</a></p>
+        <p><strong>Adres:</strong> TODO, İstanbul</p>
+      </div>
+      <div class="footer-block footer-links">
+        <h3>Sayfalar</h3>
+        <ul>
+          <li><a href="/google-haritalar-optimizasyonu/">Google Haritalar</a></li>
+          <li><a href="/google-isletme-profili-yonetimi/">İşletme Profili</a></li>
+          <li><a href="/yerel-seo-istanbul/">Yerel SEO</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/rehber/">Rehber</a></li>
+        </ul>
+      </div>
+      <div class="footer-block">
+        <h3>Sosyal</h3>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Konum Online. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
 </body>
+
 </html>

@@ -1,6 +1,7 @@
 _arsiv/
 *.log
 config/
+form/config.php
 .DS_Store
 Thumbs.db
 .gstack/

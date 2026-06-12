@@ -11,6 +11,17 @@
       "instagram": "TODO",
       "linkedin": "TODO",
       "youtube": "TODO"
+    },
+    "footer": {
+      "tagline": "İstanbul'daki işletmeler için Google Haritalar görünürlüğü ve yerel büyüme.",
+      "copyright": "© 2026 Konum Online. Tüm hakları saklıdır.",
+      "nav": [
+        { "label": "Google Haritalar", "href": "/google-haritalar-optimizasyonu/" },
+        { "label": "İşletme Profili", "href": "/google-isletme-profili-yonetimi/" },
+        { "label": "Yerel SEO", "href": "/yerel-seo-istanbul/" },
+        { "label": "İletişim", "href": "/iletisim/" },
+        { "label": "Rehber", "href": "/rehber/" }
+      ]
     }
   },
   "pages": {
@@ -272,7 +283,89 @@
           "secondaryHref": "https://wa.me/905000000000?text=Merhaba%2C%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
         }
       }
+    },
+    "services": {
+      "haritalar": {
+        "slug": "google-haritalar-optimizasyonu",
+        "meta": {
+          "title": "Google Haritalar Optimizasyonu | Konum Online",
+          "description": "İstanbul işletmeleri için mahalle bazlı Google Haritalar görünürlüğü: grid analizi, sıralama dağılımı ve telefon/yol tarifi odaklı optimizasyon."
+        },
+        "h1": "Google Haritalar Optimizasyonu",
+        "relatedArticle": "dukkaninizin-onunde-birincisiniz-ama-telefon-calmiyor"
+      },
+      "isletmeProfili": {
+        "slug": "google-isletme-profili-yonetimi",
+        "meta": {
+          "title": "Google İşletme Profili Yönetimi | Konum Online",
+          "description": "İstanbul işletmeleri için Google İşletme Profili yönetimi: profil tamlığı, kategori, yorum tazeliği ve görsel güncelliği ile güven inşası."
+        },
+        "h1": "Google İşletme Profili Yönetimi",
+        "relatedArticle": "eksik-google-profili-gorunmez-profil"
+      },
+      "yerelSeo": {
+        "slug": "yerel-seo-istanbul",
+        "meta": {
+          "title": "Yerel SEO İstanbul | Konum Online",
+          "description": "İstanbul için yerel SEO: konum sayfaları, şema işaretlemesi, NAP tutarlılığı ve mahalle bazlı içerik stratejisi ile harita görünürlüğünü besleyin."
+        },
+        "h1": "Yerel SEO İstanbul",
+        "relatedArticle": "her-yere-hizmet-veriyoruz-tuzagi"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "İletişim | Konum Online",
+        "description": "Konum Online ile iletişime geçin: ön değerlendirme formu, telefon, e-posta ve WhatsApp. İstanbul'daki işletmeniz için yerel görünürlük desteği."
+      },
+      "h1": "İşletmenizi konuşalım",
+      "form": {
+        "action": "/form/send.php",
+        "sectors": [
+          "Restoran / Kafe",
+          "Sağlık / Klinik",
+          "Perakende / Mağaza",
+          "Güzellik / Estetik",
+          "Otomotiv / Servis",
+          "Hizmet / Tamirat",
+          "Diğer"
+        ]
+      }
+    },
+    "notFound": {
+      "meta": {
+        "title": "Sayfa bulunamadı | Konum Online",
+        "description": "Aradığınız sayfa bulunamadı. Konum Online ana sayfasına veya hizmetlerimize dönün."
+      },
+      "h1": "Sayfa bulunamadı"
+    },
+    "rehber": {
+      "meta": {
+        "title": "Rehber & İçgörüler | Konum Online",
+        "description": "Google Haritalar, işletme profili ve yerel SEO üzerine rehber makaleler. İstanbul işletmeleri için pratik içgörüler."
+      }
     }
   },
-  "articles": []
+  "articles": [
+    {
+      "slug": "dukkaninizin-onunde-birincisiniz-ama-telefon-calmiyor",
+      "title": "Dükkânınızın önünde görünürsünüz ama telefonunuz çalmıyor — neden?",
+      "relatedService": "haritalar"
+    },
+    {
+      "slug": "eksik-google-profili-gorunmez-profil",
+      "title": "Google'ın yeni kuralı: Eksik profil, görünmez profil",
+      "relatedService": "isletmeProfili"
+    },
+    {
+      "slug": "yorum-sayisi-mi-yorum-tazeligi-mi",
+      "title": "Yorum sayısı mı, yorum tazeliği mi?",
+      "relatedService": "isletmeProfili"
+    },
+    {
+      "slug": "her-yere-hizmet-veriyoruz-tuzagi",
+      "title": "\"Her yere hizmet veriyoruz\" tuzağı",
+      "relatedService": "yerelSeo"
+    }
+  ]
 }

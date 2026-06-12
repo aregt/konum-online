@@ -123,6 +123,27 @@ function rankToColor(rank) {
   return "#ef4444";
 }
 
+function renderVisibilityGridMount(mount, data, options) {
+  if (!mount || !data) return;
+
+  const opts = options || {};
+  const size = data.gridSize;
+  mount.style.setProperty("--grid-size", String(size));
+  mount.classList.toggle("visibility-map--mini", Boolean(opts.mini));
+  mount.setAttribute(
+    "aria-label",
+    `${data.business || "İşletme"} için örnek görünürlük haritası`
+  );
+
+  mount.innerHTML = data.cells
+    .map((cell) => {
+      const classes = ["grid-cell"];
+      if (cell.isBusiness) classes.push("is-business");
+      return `<span class="${classes.join(" ")}" style="--rank-color:${rankToColor(cell.rank)}" title="Sıra: ${cell.rank}" aria-label="Sıra ${cell.rank}"></span>`;
+    })
+    .join("");
+}
+
 function renderVisibilityGrid() {
   const mount = document.getElementById("visibility-grid-mount");
   const metaMount = document.getElementById("visibility-grid-meta");
@@ -139,20 +160,7 @@ function renderVisibilityGrid() {
     `;
   }
 
-  const size = data.gridSize;
-  mount.style.setProperty("--grid-size", String(size));
-  mount.setAttribute(
-    "aria-label",
-    `${data.business} için ${data.area} bölgesinde örnek görünürlük haritası`
-  );
-
-  mount.innerHTML = data.cells
-    .map((cell) => {
-      const classes = ["grid-cell"];
-      if (cell.isBusiness) classes.push("is-business");
-      return `<span class="${classes.join(" ")}" style="--rank-color:${rankToColor(cell.rank)}" title="Sıra: ${cell.rank}" aria-label="Sıra ${cell.rank}"></span>`;
-    })
-    .join("");
+  renderVisibilityGridMount(mount, data);
 
   if (insightsMount && data.insights) {
     insightsMount.innerHTML = `
@@ -166,6 +174,19 @@ function renderVisibilityGrid() {
       </div>
     `;
   }
+}
+
+function renderScenarioGrids() {
+  const slug = document.body.dataset.scenario;
+  if (!slug) return;
+
+  const scenario = window.KonumDemoData && window.KonumDemoData.scenarios[slug];
+  if (!scenario) return;
+
+  const beforeMount = document.getElementById("scenario-grid-before");
+  const afterMount = document.getElementById("scenario-grid-after");
+  renderVisibilityGridMount(beforeMount, scenario.before, { mini: true });
+  renderVisibilityGridMount(afterMount, scenario.after, { mini: true });
 }
 
 function trendIcon(trend) {
@@ -209,5 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initReveal();
   initCounters();
   renderVisibilityGrid();
+  renderScenarioGrids();
   renderDashboard();
 });

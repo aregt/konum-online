@@ -2613,3 +2613,115 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* —— Örnek senaryo detay sayfaları —— */
+a.case-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.scenario-disclaimer {
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.38);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #fcd9b8;
+  margin-bottom: 1.5rem;
+}
+
+.scenario-disclaimer strong {
+  color: #fdba74;
+}
+
+.scenario-grids {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 3vw, 28px);
+  margin: 1.5rem 0;
+}
+
+.scenario-grid-panel h3 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+  color: #e8eef5;
+}
+
+.scenario-grid-panel .visibility-map-wrap {
+  padding: 14px;
+}
+
+.visibility-map.visibility-map--mini {
+  max-width: 100%;
+  gap: 4px;
+}
+
+.visibility-map--mini .grid-cell.is-business::after {
+  width: 10px;
+  height: 10px;
+}
+
+.scenario-timeline {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 2px solid rgba(85, 225, 152, 0.35);
+}
+
+.scenario-timeline li {
+  position: relative;
+  padding: 0 0 1.75rem 1.25rem;
+}
+
+.scenario-timeline li::before {
+  content: "";
+  position: absolute;
+  left: -1.38rem;
+  top: 0.45rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #55e198;
+  box-shadow: 0 0 0 3px rgba(85, 225, 152, 0.2);
+}
+
+.scenario-timeline h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+  color: #55e198;
+}
+
+.scenario-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.scenario-results div {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.scenario-results span {
+  display: block;
+  font-size: 0.82rem;
+  color: #9aa8b6;
+  margin-bottom: 4px;
+}
+
+.scenario-results strong {
+  font-size: 1.35rem;
+  color: #55e198;
+}
+
+@media (max-width: 720px) {
+  .scenario-grids,
+  .scenario-results {
+    grid-template-columns: 1fr;
+  }
+}

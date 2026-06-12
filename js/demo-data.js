@@ -1,10 +1,11 @@
 /**
- * Demo verileri — Visibility Grid ve Dashboard bölümleri buradan beslenir.
+ * Demo verileri — Visibility Grid, Dashboard ve senaryo sayfaları buradan beslenir.
  * Gerçek API entegrasyonunda yalnızca bu dosya değişir.
  */
 (function () {
   const gridSize = 7;
-  const center = 3;
+  const center7 = 3;
+
   const rankPattern = [
     [18, 14, 11, 9, 12, 15, 20],
     [13, 8, 5, 4, 6, 10, 16],
@@ -15,14 +16,38 @@
     [19, 14, 12, 10, 13, 16, 22],
   ];
 
-  const cells = [];
+  function cellsFromMatrix(matrix) {
+    const size = matrix.length;
+    const center = Math.floor(size / 2);
+    const cells = [];
+    for (let row = 0; row < size; row += 1) {
+      for (let col = 0; col < size; col += 1) {
+        cells.push({
+          row,
+          col,
+          rank: matrix[row][col],
+          isBusiness: row === center && col === center,
+        });
+      }
+    }
+    return cells;
+  }
+
+  function buildGrid(matrix) {
+    return {
+      gridSize: matrix.length,
+      cells: cellsFromMatrix(matrix),
+    };
+  }
+
+  const homeCells = [];
   for (let row = 0; row < gridSize; row += 1) {
     for (let col = 0; col < gridSize; col += 1) {
-      cells.push({
+      homeCells.push({
         row,
         col,
         rank: rankPattern[row][col],
-        isBusiness: row === center && col === center,
+        isBusiness: row === center7 && col === center7,
       });
     }
   }
@@ -33,7 +58,7 @@
       area: "Kadıköy / Moda",
       query: "moda kahve",
       gridSize,
-      cells,
+      cells: homeCells,
       insights: {
         observation:
           "Dükkanınızın önünde görünürsünüz; ancak Moda Caddesi ve Sahil yönündeki aramalarda sıralama 10–20 bandına düşüyor. Geniş hizmet alanı seçimi bu dağılımı zayıflatıyor.",
@@ -100,6 +125,65 @@
           ],
         },
       ],
+    },
+    scenarios: {
+      "moda-dis-klinigi": {
+        business: "Moda Diş Kliniği",
+        area: "Kadıköy / Moda",
+        query: "moda diş kliniği",
+        before: buildGrid([
+          [22, 19, 17, 18, 20],
+          [18, 15, 13, 14, 17],
+          [16, 12, 11, 13, 15],
+          [17, 14, 12, 14, 16],
+          [21, 18, 16, 17, 19],
+        ]),
+        after: buildGrid([
+          [6, 5, 4, 5, 7],
+          [5, 4, 3, 4, 6],
+          [4, 3, 2, 3, 5],
+          [5, 3, 2, 4, 6],
+          [7, 5, 4, 5, 8],
+        ]),
+      },
+      "beyoglu-burger": {
+        business: "Beyoğlu Burger",
+        area: "Beyoğlu / Cihangir",
+        query: "cihangir burger",
+        before: buildGrid([
+          [21, 18, 16, 17, 19],
+          [17, 14, 12, 13, 16],
+          [15, 11, 10, 12, 14],
+          [16, 13, 11, 13, 15],
+          [20, 17, 15, 16, 18],
+        ]),
+        after: buildGrid([
+          [5, 4, 3, 4, 6],
+          [4, 3, 2, 3, 5],
+          [3, 2, 1, 2, 4],
+          [4, 3, 2, 3, 5],
+          [6, 4, 3, 4, 7],
+        ]),
+      },
+      "sisli-estetik-merkezi": {
+        business: "Şişli Estetik Merkezi",
+        area: "Şişli / Mecidiyeköy",
+        query: "şişli estetik merkezi",
+        before: buildGrid([
+          [23, 20, 18, 19, 21],
+          [19, 16, 14, 15, 18],
+          [17, 13, 12, 14, 16],
+          [18, 15, 13, 15, 17],
+          [22, 19, 17, 18, 20],
+        ]),
+        after: buildGrid([
+          [7, 5, 4, 5, 8],
+          [5, 4, 3, 4, 6],
+          [4, 3, 2, 3, 5],
+          [5, 4, 3, 4, 6],
+          [8, 6, 5, 6, 9],
+        ]),
+      },
     },
   };
 })();

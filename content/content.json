@@ -235,6 +235,7 @@
           {
             "name": "Moda Diş Kliniği",
             "location": "Kadıköy",
+            "href": "/senaryolar/moda-dis-klinigi/",
             "stats": [
               { "label": "Telefon Aramaları", "value": "+%38" },
               { "label": "Yol Tarifi İstekleri", "value": "+%52" }
@@ -243,6 +244,7 @@
           {
             "name": "Beyoğlu Burger",
             "location": "Beyoğlu",
+            "href": "/senaryolar/beyoglu-burger/",
             "stats": [
               { "label": "Telefon Aramaları", "value": "+%41" },
               { "label": "Yorum Puanı", "value": "4.2 → 4.8" }
@@ -251,6 +253,7 @@
           {
             "name": "Şişli Estetik Merkezi",
             "location": "Şişli",
+            "href": "/senaryolar/sisli-estetik-merkezi/",
             "stats": [
               { "label": "Telefon Aramaları", "value": "+%29" },
               { "label": "Profil Görüntüleme", "value": "+%67" }
@@ -476,6 +479,80 @@
         { "heading": "Geniş hizmet alanı", "body": "Tüm şehre yayılmış profil sinyalleri dağınık kalır; odaklanmamış içerik belirli mahalle aramalarında zayıflar." },
         { "heading": "Pratik odak planı", "body": "Önce üç yoğun ilçede güçlenin, grid ile ölçün, komşu ilçelere kademeli genişleyin." }
       ]
+    }
+  ],
+  "scenarios": [
+    {
+      "slug": "moda-dis-klinigi",
+      "name": "Moda Diş Kliniği",
+      "location": "Kadıköy / Moda",
+      "sector": "Sağlık / Diş kliniği",
+      "image": "case-dental.webp",
+      "canonical": "https://konum.online/senaryolar/moda-dis-klinigi/",
+      "meta": {
+        "title": "Moda Diş Kliniği — Örnek Senaryo | Konum Online",
+        "description": "Kurgusal Moda Diş Kliniği örneği: Kadıköy'de grid analizi, profil düzeni ve üç aylık yerel görünürlük süreci."
+      },
+      "disclaimer": "Bu bir örnek senaryodur. Kurgusal bir işletme üzerinden çalışma modelimizi anlatır; rakamlar temsilidir.",
+      "stats": [
+        { "label": "Telefon Aramaları", "value": "+%38" },
+        { "label": "Yol Tarifi İstekleri", "value": "+%52" }
+      ],
+      "gridQuery": "moda diş kliniği",
+      "timeline": [
+        { "month": 1, "title": "Analiz ve temel düzen", "body": "Grid ile zayıf bölgeler haritalandı; kategori ve hizmet alanı netleştirildi; NAP hizalandı." },
+        { "month": 2, "title": "İçerik ve yorum disiplini", "body": "Fotoğraflar güncellendi; yorum yanıtları ve etik toplama akışı kuruldu." },
+        { "month": 3, "title": "İzleme ve ince ayar", "body": "Grid tekrar ölçüldü; telefon ve yol tarifi eğilimleri karşılaştırıldı." }
+      ],
+      "sectorNotes": ["Randevu odaklı arama niyeti", "Diş Kliniği kategorisi", "İmplant/ortodonti hizmet listesi", "Yorum tazeliği ve güven sinyalleri"]
+    },
+    {
+      "slug": "beyoglu-burger",
+      "name": "Beyoğlu Burger",
+      "location": "Beyoğlu / Cihangir",
+      "sector": "Restoran / Burger",
+      "image": "case-burger.webp",
+      "canonical": "https://konum.online/senaryolar/beyoglu-burger/",
+      "meta": {
+        "title": "Beyoğlu Burger — Örnek Senaryo | Konum Online",
+        "description": "Kurgusal Beyoğlu Burger örneği: Cihangir'de restoran görünürlüğü, yorum disiplini ve üç aylık süreç."
+      },
+      "disclaimer": "Bu bir örnek senaryodur. Kurgusal bir işletme üzerinden çalışma modelimizi anlatır; rakamlar temsilidir.",
+      "stats": [
+        { "label": "Telefon Aramaları", "value": "+%41" },
+        { "label": "Yorum Puanı", "value": "4.2 → 4.8" }
+      ],
+      "gridQuery": "cihangir burger",
+      "timeline": [
+        { "month": 1, "title": "Profil ve NAP düzeni", "body": "Grid analizi; kategori, saatler ve menü fotoğrafları yenilendi." },
+        { "month": 2, "title": "Görsel ve yorum akışı", "body": "Haftalık ürün fotoğrafları; yorum yanıtları ve toplama akışı." },
+        { "month": 3, "title": "Yoğun saat ve yerel içerik", "body": "Yoğun saatler güncellendi; grid tekrar ölçüldü." }
+      ],
+      "sectorNotes": ["Yakınımdaki burger aramaları", "Menü ve kapak fotoğrafları", "Yoğun saat bilgisi", "Hızlı karar döngüsü"]
+    },
+    {
+      "slug": "sisli-estetik-merkezi",
+      "name": "Şişli Estetik Merkezi",
+      "location": "Şişli / Mecidiyeköy",
+      "sector": "Güzellik / Estetik merkezi",
+      "image": "case-aesthetic-clinic.webp",
+      "canonical": "https://konum.online/senaryolar/sisli-estetik-merkezi/",
+      "meta": {
+        "title": "Şişli Estetik Merkezi — Örnek Senaryo | Konum Online",
+        "description": "Kurgusal Şişli Estetik Merkezi örneği: profil güven sinyalleri, grid ve üç aylık yerel görünürlük süreci."
+      },
+      "disclaimer": "Bu bir örnek senaryodur. Kurgusal bir işletme üzerinden çalışma modelimizi anlatır; rakamlar temsilidir.",
+      "stats": [
+        { "label": "Telefon Aramaları", "value": "+%29" },
+        { "label": "Profil Görüntüleme", "value": "+%67" }
+      ],
+      "gridQuery": "şişli estetik merkezi",
+      "timeline": [
+        { "month": 1, "title": "Güven ve profil tamlığı", "body": "Hizmet listesi ve klinik fotoğrafları tamamlandı; hizmet alanı daraltıldı." },
+        { "month": 2, "title": "İçerik ve yorum yanıtları", "body": "SSS eklendi; yorum yanıtları ve NAP hizası güçlendirildi." },
+        { "month": 3, "title": "Görüntülenme ve telefon takibi", "body": "Profil görüntülenmesi ve arama eğilimleri aylık izlendi." }
+      ],
+      "sectorNotes": ["Uzun araştırma döngüsü", "Güven ve steril ortam görselleri", "Hizmet listesi detayı", "Profil görüntülenmesi metriği"]
     }
   ]
 }

@@ -1853,6 +1853,63 @@
   margin-top: 18px;
 }
 
+.xray-scope {
+  margin-top: clamp(28px, 3.5vw, 44px);
+}
+
+.xray-scope h3 {
+  margin: 0 0 16px;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  color: #f3f5f7;
+}
+
+.xray-scope-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.xray-scope-item {
+  background: rgba(16, 24, 36, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.xray-scope-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(47, 208, 127, 0.12);
+  margin-bottom: 12px;
+}
+
+.xray-scope-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #55e198;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.xray-scope-item h4 {
+  margin: 0 0 6px;
+  font-size: .98rem;
+  color: #f3f5f7;
+}
+
+.xray-scope-item p {
+  margin: 0;
+  font-size: .86rem;
+  line-height: 1.55;
+  color: #b8c3cf;
+}
+
 .dashboard-section {
   padding: clamp(56px, 7vw, 96px) 0;
   background: linear-gradient(180deg, #08121c 0%, #061018 100%);

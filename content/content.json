@@ -169,6 +169,31 @@
         "title": "Google'da tek bir sıralamanız yok.",
         "paragraph": "Sıralamanız, arayanın konumuna göre değişir. Görünürlük Röntgeni bunu mahalle mahalle görünür kılar — Kadıköy / Moda'da örnek bir kafe senaryosu: aynı arama, farklı noktalarda farklı sıralama. Yeşil iyi, kırmızı zayıf görünürlük bandını temsil eder.",
         "disclaimer": "Bu alan örnek gösterim / demo amaçlıdır.",
+        "scope": {
+          "title": "Görünürlük Röntgeni neleri kapsar?",
+          "items": [
+            {
+              "title": "Bölge taraması",
+              "description": "Mahalle mahalle nerede görünüyor, nerede kayboluyorsunuz — harita üzerinde."
+            },
+            {
+              "title": "Yerel görünürlük payı",
+              "description": "Hedef bölgenizdeki aramaların yüzde kaçında ilk 3'te çıkıyorsunuz — tek sayıyla."
+            },
+            {
+              "title": "Rakip kıyaslaması",
+              "description": "Aynı haritada rakipleriniz nerede güçlü, siz nerede açık veriyorsunuz."
+            },
+            {
+              "title": "Yapay zekâ görünürlüğü",
+              "description": "ChatGPT, Gemini ve Google yapay zekâ özetleri işletmenizi öneriyor mu?"
+            },
+            {
+              "title": "Profil & veri tutarlılığı",
+              "description": "Profil tamlığı, kategori doğruluğu ve isim-adres-telefon tutarlılığı denetimi."
+            }
+          ]
+        },
         "cta": "Görünürlük Röntgeni İsteyin",
         "ctaHref": "/iletisim/"
       },

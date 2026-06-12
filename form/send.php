@@ -27,11 +27,11 @@ if (!checkRateLimit()) {
     respond(false, 'Çok sık gönderim yaptınız. Lütfen birkaç dakika sonra tekrar deneyin.');
 }
 
-$name = sanitizeText($_POST['name'] ?? '', 120);
-$business = sanitizeText($_POST['business'] ?? '', 160);
-$sector = sanitizeText($_POST['sector'] ?? '', 80);
-$district = sanitizeText($_POST['district'] ?? '', 80);
-$phone = sanitizeText($_POST['phone'] ?? '', 40);
+$name = sanitizeSingleLine($_POST['name'] ?? '', 120);
+$business = sanitizeSingleLine($_POST['business'] ?? '', 160);
+$sector = sanitizeSingleLine($_POST['sector'] ?? '', 80);
+$district = sanitizeSingleLine($_POST['district'] ?? '', 80);
+$phone = sanitizeSingleLine($_POST['phone'] ?? '', 40);
 $message = sanitizeText($_POST['message'] ?? '', 4000);
 
 if ($name === '' || $business === '' || $sector === '' || $district === '' || $phone === '' || $message === '') {
@@ -86,6 +86,14 @@ function sanitizeText(string $value, int $max): string
         $value = mb_substr($value, 0, $max);
     }
     return $value;
+}
+
+function sanitizeSingleLine(string $value, int $max): string
+{
+    $value = str_replace(["\r", "\n"], ' ', $value);
+    $value = sanitizeText($value, $max);
+    $value = preg_replace('/\s+/u', ' ', $value) ?? '';
+    return trim($value);
 }
 
 function checkRateLimit(): bool

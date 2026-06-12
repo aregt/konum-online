@@ -342,30 +342,96 @@
     "rehber": {
       "meta": {
         "title": "Rehber & İçgörüler | Konum Online",
-        "description": "Google Haritalar, işletme profili ve yerel SEO üzerine rehber makaleler. İstanbul işletmeleri için pratik içgörüler."
-      }
+        "description": "Google Haritalar, işletme profili ve yerel SEO üzerine rehber makaleler. İstanbul işletmeleri için veri destekli içgörüler."
+      },
+      "h1": "Rehber & İçgörüler",
+      "lead": "Yerel görünürlük, profil yönetimi ve İstanbul odaklı strateji üzerine kısa okumalar."
+    },
+    "homeGuideStrip": {
+      "tag": "Rehber & İçgörüler",
+      "title": "Yerel görünürlük üzerine kısa okumalar"
     }
   },
   "articles": [
     {
       "slug": "dukkaninizin-onunde-birincisiniz-ama-telefon-calmiyor",
       "title": "Dükkânınızın önünde görünürsünüz ama telefonunuz çalmıyor — neden?",
-      "relatedService": "haritalar"
+      "summary": "Grid mantığı ve sıralama ile müşteri kazanımı arasındaki farkı anlamak için.",
+      "readingMinutes": 8,
+      "datePublished": "2026-06-12",
+      "canonical": "https://konum.online/rehber/dukkaninizin-onunde-birincisiniz-ama-telefon-calmiyor/",
+      "meta": {
+        "title": "Dükkân önünde görünürsünüz ama telefon çalmıyor | Konum Online",
+        "description": "Google Haritalar'da dükkanınızın önünde görünmeniz ile müşteri kazanımı aynı şey değil. Grid mantığı, sıralama dağılımı ve telefon/yol tarifi metrikleri."
+      },
+      "relatedService": "haritalar",
+      "relatedServiceHref": "/google-haritalar-optimizasyonu/",
+      "relatedServiceLabel": "Google Haritalar optimizasyonu",
+      "sections": [
+        { "heading": "Neden tek noktadaki sıra yanıltıcı?", "body": "Yerel arama motorları kullanıcı konumunu ve arama niyetini birlikte değerlendirir. İşletme sahibi fiziksel konumunda test ettiğinde herkesin aynı listeyi gördüğünü sanır; oysa şehir içinde sıralama onlarca basamak değişebilir." },
+        { "heading": "Grid mantığı nedir?", "body": "Grid analizi haritayı eşit noktalara böler ve her noktada sıralamayı ölçer. Tek sıra rakamı yerine yeşil-kırmızı bir görünürlük haritası üretir." },
+        { "heading": "Telefon ve yol tarifi", "body": "GBP içgörülerindeki arama ve yol tarifi tıklamaları, görünürlük grafiklerinden daha doğrudan iş metrikleridir." }
+      ]
     },
     {
       "slug": "eksik-google-profili-gorunmez-profil",
-      "title": "Google'ın yeni kuralı: Eksik profil, görünmez profil",
-      "relatedService": "isletmeProfili"
+      "title": "Eksik profil, görünmez profil",
+      "summary": "Profil tamlığı ve kategori seçiminin görünürlüğe etkisini özetliyoruz.",
+      "readingMinutes": 7,
+      "datePublished": "2026-06-12",
+      "canonical": "https://konum.online/rehber/eksik-google-profili-gorunmez-profil/",
+      "meta": {
+        "title": "Eksik profil, görünmez profil | Konum Online",
+        "description": "Google İşletme Profili tamlığı neden görünürlük için kritik? Kategori, fotoğraf, hizmet alanları ve eksik alanların arama sonuçlarına etkisi."
+      },
+      "relatedService": "isletmeProfili",
+      "relatedServiceHref": "/google-isletme-profili-yonetimi/",
+      "relatedServiceLabel": "Google İşletme Profili yönetimi",
+      "sections": [
+        { "heading": "Tamlık skoru ne anlama geliyor?", "body": "Google profil ilerleme çubuğu, algoritmanın işletmeyi ne kadar güvenilir gördüğüne dair pratik bir ölçüttür." },
+        { "heading": "Kategori seçimi", "body": "Birincil kategori hangi aramalarda değerlendirileceğinizi belirler; ikincil kategoriler niş niyetlere ek yüzey sağlar." },
+        { "heading": "Pratik kontrol listesi", "body": "Kategori, saatler, açıklama, fotoğraf ve SSS alanlarını aylık denetleyin; sonuçları gösterim ve eylem metrikleriyle ölçün." }
+      ]
     },
     {
       "slug": "yorum-sayisi-mi-yorum-tazeligi-mi",
       "title": "Yorum sayısı mı, yorum tazeliği mi?",
-      "relatedService": "isletmeProfili"
+      "summary": "Yorumların yeni matematiği: tazelik, hız ve anlamlı içerik.",
+      "readingMinutes": 7,
+      "datePublished": "2026-06-12",
+      "canonical": "https://konum.online/rehber/yorum-sayisi-mi-yorum-tazeligi-mi/",
+      "meta": {
+        "title": "Yorum sayısı mı, yorum tazeliği mi? | Konum Online",
+        "description": "Google yorumlarında sayı mı tazelik mi daha önemli? Yorum hızı, semantik içerik ve yanıt stratejisi üzerine veri destekli rehber."
+      },
+      "relatedService": "isletmeProfili",
+      "relatedServiceHref": "/google-isletme-profili-yonetimi/",
+      "relatedServiceLabel": "Google İşletme Profili yönetimi",
+      "sections": [
+        { "heading": "Sayı hâlâ önemli", "body": "Yüzlerce yorum sosyal kanıt sunar; fakat son aylarda yeni yorum almayan profiller daha az canlı algılanır." },
+        { "heading": "Tazelik ve yorum hızı", "body": "Son geri bildirimin yakınlığı ve dönemsel sıklık, aktif hizmet sinyali olarak değerlendirilir." },
+        { "heading": "Dengeli strateji", "body": "Hizmet kalitesi, kolay yorum akışı, hızlı yanıt ve etik toplama birlikte yürütülmelidir." }
+      ]
     },
     {
       "slug": "her-yere-hizmet-veriyoruz-tuzagi",
       "title": "\"Her yere hizmet veriyoruz\" tuzağı",
-      "relatedService": "yerelSeo"
+      "summary": "Hiper-yerel odak neden İstanbul'da daha güçlü sonuç üretir?",
+      "readingMinutes": 8,
+      "datePublished": "2026-06-12",
+      "canonical": "https://konum.online/rehber/her-yere-hizmet-veriyoruz-tuzagi/",
+      "meta": {
+        "title": "\"Her yere hizmet\" tuzağı | Konum Online",
+        "description": "Tüm İstanbul'a hizmet vermek yerel SEO'da neden zayıflatır? Hiper-yerel odak, hizmet alanı ve mahalle bazlı görünürlük stratejisi."
+      },
+      "relatedService": "yerelSeo",
+      "relatedServiceHref": "/yerel-seo-istanbul/",
+      "relatedServiceLabel": "Yerel SEO (İstanbul)",
+      "sections": [
+        { "heading": "Yerel arama hiper-yereldir", "body": "Aynı işletme farklı ilçelerde farklı sıralamalara sahiptir; İstanbul tek pazar değil, yerel pazarlar ağıdır." },
+        { "heading": "Geniş hizmet alanı", "body": "Tüm şehre yayılmış profil sinyalleri dağınık kalır; odaklanmamış içerik belirli mahalle aramalarında zayıflar." },
+        { "heading": "Pratik odak planı", "body": "Önce üç yoğun ilçede güçlenin, grid ile ölçün, komşu ilçelere kademeli genişleyin." }
+      ]
     }
   ]
 }

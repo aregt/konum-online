@@ -1,0 +1,5 @@
+_arsiv/
+*.log
+config/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,220 @@
+{
+  "site": {
+    "brand": "Konum Online",
+    "domain": "konum.online",
+    "lang": "tr",
+    "contact": {
+      "phone": "TODO",
+      "whatsapp": "TODO",
+      "email": "TODO",
+      "address": "TODO",
+      "instagram": "TODO",
+      "linkedin": "TODO",
+      "youtube": "TODO"
+    }
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Konum Online",
+        "description": "TODO"
+      },
+      "header": {
+        "brand": "Konum Online",
+        "nav": [
+          { "label": "Google Haritalar", "href": "/google-haritalar-optimizasyonu/" },
+          { "label": "İşletme Profili", "href": "/google-isletme-profili-yonetimi/" },
+          { "label": "Yerel SEO", "href": "/yerel-seo-istanbul/" },
+          { "label": "Nasıl Çalışırız?", "href": "#process" },
+          { "label": "İletişim", "href": "/iletisim/" }
+        ],
+        "cta": "Ön Değerlendirme İsteyin"
+      },
+      "hero": {
+        "eyebrow": "İstanbul'daki işletmeler için",
+        "title": "Google Haritalar'da Görünür Olun, Müşteri Kazanın.",
+        "titleLines": [
+          "Google Haritalar'da",
+          "Görünür Olun,",
+          "Müşteri Kazanın."
+        ],
+        "accent": "Müşteri Kazanın.",
+        "paragraph": "Kendi dükkanınızda görünür olmanız yetmez. Müşterinizin sizi aradığı her mahallede, her aramada, her anda görünür olmanızı sağlıyoruz.",
+        "actions": {
+          "primary": "Ön Değerlendirme İsteyin",
+          "secondary": "İşletmenizi Konuşalım"
+        },
+        "features": [
+          "Google İşletme Profili",
+          "Yorum Yönetimi",
+          "Sosyal Medya",
+          "Web Sitesi",
+          "İçerik & Fotoğraf"
+        ],
+        "mapCard": {
+          "title": "Kahve Durağı Moda",
+          "rating": "4,8",
+          "stars": "★★★★★",
+          "reviewCount": "(487)",
+          "place": "Kafe · Kadıköy, İstanbul",
+          "actions": ["Ara", "Yol tarifi", "Kaydet", "Web sitesi"],
+          "review": {
+            "text": "Harika kahveler, güler yüzlü hizmet. Kesinlikle tavsiye ederim!",
+            "time": "2 gün önce"
+          }
+        }
+      },
+      "stats": {
+        "items": [
+          {
+            "value": "31",
+            "prefix": "%",
+            "title": "Daha fazla telefon araması",
+            "subtitle": "Ortalama artış"
+          },
+          {
+            "value": "42",
+            "prefix": "%",
+            "title": "Daha fazla yol tarifi isteği",
+            "subtitle": "Ortalama artış"
+          },
+          {
+            "value": "4.8",
+            "decimals": 1,
+            "title": "Ortalama yorum puanı",
+            "subtitle": "Yönetilen profillerde"
+          },
+          {
+            "value": "5-10 Kat",
+            "title": "Daha fazla görünürlük",
+            "subtitle": "Hedef mahallelerde"
+          }
+        ]
+      },
+      "ecosystem": {
+        "tag": "Haritalar Merkezde",
+        "title": "360° Yerel Görünürlük Ekosistemi",
+        "titleLines": ["360° Yerel Görünürlük", "Ekosistemi"],
+        "paragraph": "Google sizi sadece harita profilinizle değerlendirmez. Biz, tüm dijital varlığınızı Google Haritalar görünürlüğünüzü besleyecek şekilde yönetiriz.",
+        "cta": "Tüm Çözümlerimizi Keşfedin",
+        "hub": {
+          "title": "Google Haritalar Merkezde",
+          "lines": ["Google", "Haritalar", "Merkezde"]
+        },
+        "orbitItems": [
+          { "label": "Yorum Yönetimi", "lines": ["Yorum", "Yönetimi"] },
+          { "label": "Fotoğraf & Görsel Yönetimi", "lines": ["Fotoğraf &", "Görsel Yönetimi"] },
+          { "label": "Google İşletme Profili Optimizasyonu", "lines": ["Google İşletme", "Profili Optimizasyonu"] },
+          { "label": "Web Sitesi & Yerel SEO", "lines": ["Web Sitesi &", "Yerel SEO"] },
+          { "label": "Sosyal Medya Yönetimi", "lines": ["Sosyal Medya", "Yönetimi"] },
+          { "label": "İçerik Üretimi & Google Paylaşımları", "lines": ["İçerik Üretimi &", "Google Paylaşımları"] }
+        ],
+        "phoneAlt": "Konum Online mobil görünümü"
+      },
+      "process": {
+        "title": "Nasıl Çalışıyoruz?",
+        "subtitle": "Sadece görünür olmanızı değil, seçilir olmanızı sağlıyoruz.",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Pazar ve Rekabet Analizi",
+            "description": "Dijital konumunuzu ve rakiplerinizi analiz ederek nerede müşteri kaybettiğinizi net verilerle ortaya koyuyoruz."
+          },
+          {
+            "number": 2,
+            "title": "Dijital Varlık ve Altyapı Optimizasyonu",
+            "description": "İnternet kimliğinizi tutarlı hale getiriyor; doğru kategori ve veri yapısıyla dijital otoritenizi inşa ediyoruz."
+          },
+          {
+            "number": 3,
+            "title": "Tercih Edilme Stratejisi ve Güven İnşası",
+            "description": "Görünürlükten öteye geçip, hem kullanıcılar hem de algoritmalar nezdinde güven inşa ederek tercih edilmenizi sağlıyoruz."
+          },
+          {
+            "number": 4,
+            "title": "Bütünlük Sağlama",
+            "description": "İnternetteki tüm varlıklarınızı birbirini doğrulayan, entegre bir ekosisteme dönüştürüyoruz."
+          },
+          {
+            "number": 5,
+            "title": "Sürdürülebilir Sistem İnşası",
+            "description": "Geçici bir kampanya değil; zamanla kendi imkanlarınızla da yönetebileceğiniz yaşayan bir sistem kuruyoruz."
+          }
+        ]
+      },
+      "cases": {
+        "tag": "Gerçek Sonuçlar",
+        "title": "Gerçek İşletmeler, Gerçek Büyüme",
+        "titleLines": ["Gerçek İşletmeler,", "Gerçek Büyüme"],
+        "paragraph": "Doğru strateji, istikrarlı yönetim ve sürekli optimizasyon ile güçlü sonuçlar.",
+        "cta": "Tüm Başarı Hikayelerimizi Görün",
+        "items": [
+          {
+            "name": "Moda Diş Kliniği",
+            "location": "Kadıköy",
+            "stats": [
+              { "label": "Telefon Aramaları", "value": "+%38" },
+              { "label": "Yol Tarifi İstekleri", "value": "+%52" }
+            ]
+          },
+          {
+            "name": "Beyoğlu Burger",
+            "location": "Beyoğlu",
+            "stats": [
+              { "label": "Telefon Aramaları", "value": "+%41" },
+              { "label": "Yorum Puanı", "value": "4.2 → 4.8" }
+            ]
+          },
+          {
+            "name": "Şişli Estetik Merkezi",
+            "location": "Şişli",
+            "stats": [
+              { "label": "Telefon Aramaları", "value": "+%29" },
+              { "label": "Profil Görüntüleme", "value": "+%67" }
+            ]
+          }
+        ],
+        "pills": {
+          "before": "ÖNCE",
+          "after": "SONRA"
+        }
+      },
+      "testimonials": {
+        "published": false,
+        "title": "Müşterilerimiz Ne Diyor?",
+        "items": [
+          {
+            "quote": "Haritalarda görünür olmak için ne yapmamız gerektiğini ilk kez bu kadar net anladık. Aramalarımız ciddi şekilde arttı.",
+            "name": "Ayşe K.",
+            "business": "Moda Coffee"
+          },
+          {
+            "quote": "Sürekli ilgililer, yorumlarımızı yönetiyorlar, profilimizi canlı tutuyorlar. Farkı net hissediyoruz.",
+            "name": "Mehmet T.",
+            "business": "Üsküdar Klinik"
+          },
+          {
+            "quote": "Önceden varlığımız yok gibiydi. Şimdi mahallemizde bizi bulamayan müşteri kalmadı.",
+            "name": "Emre Y.",
+            "business": "Kadıköy Oto Servis"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Haritalarda Görünmüyorsanız, Müşterileriniz Rakiplerinizdedir.",
+        "titleLines": ["Haritalarda Görünmüyorsanız,", "Müşterileriniz Rakiplerinizdedir."],
+        "paragraph": "İşletmenizi birlikte güçlendirelim.",
+        "checks": [
+          "Ücretsiz ön değerlendirme",
+          "Kişiye özel strateji",
+          "Hızlı geri dönüş"
+        ],
+        "actions": {
+          "primary": "Ön Değerlendirme İsteyin",
+          "secondary": "WhatsApp'tan Yazın"
+        }
+      }
+    }
+  },
+  "articles": []
+}

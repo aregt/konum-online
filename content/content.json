@@ -165,9 +165,9 @@
         ]
       },
       "visibilityGrid": {
-        "tag": "Görünürlük Izgarası",
-        "title": "Mahalle mahalle nerede görünüyorsunuz?",
-        "paragraph": "Kadıköy / Moda'da örnek bir kafe senaryosu: aynı arama, farklı noktalarda farklı sıralama. Yeşil iyi, kırmızı zayıf görünürlük bandını temsil eder.",
+        "tag": "Görünürlük Haritası",
+        "title": "Google'da tek bir sıralamanız yok.",
+        "paragraph": "Sıralamanız, arayanın konumuna göre değişir. Kadıköy / Moda'da örnek bir kafe senaryosu: aynı arama, farklı noktalarda farklı sıralama. Yeşil iyi, kırmızı zayıf görünürlük bandını temsil eder.",
         "disclaimer": "Bu alan örnek gösterim / demo amaçlıdır.",
         "cta": "Görüşme Planlayın",
         "ctaHref": "/iletisim/"

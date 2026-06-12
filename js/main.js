@@ -142,7 +142,7 @@ function renderVisibilityGrid() {
   mount.style.setProperty("--grid-size", String(size));
   mount.setAttribute(
     "aria-label",
-    `${data.business} için ${data.area} bölgesinde örnek görünürlük ızgarası`
+    `${data.business} için ${data.area} bölgesinde örnek görünürlük haritası`
   );
 
   mount.innerHTML = data.cells
@@ -156,7 +156,7 @@ function renderVisibilityGrid() {
   if (insightsMount && data.insights) {
     insightsMount.innerHTML = `
       <div class="insight-block">
-        <h3>Bu gridde ne görüyoruz</h3>
+        <h3>Bu haritada ne görüyoruz</h3>
         <p>${data.insights.observation}</p>
       </div>
       <div class="insight-block">

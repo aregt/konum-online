@@ -37,6 +37,12 @@ function initContactForm() {
       const data = await response.json();
       showFormStatus(statusEl, Boolean(data.ok), data.message || "Beklenmeyen bir yanıt alındı.");
 
+      if (window.KonumAnalytics && typeof window.KonumAnalytics.track === "function") {
+        window.KonumAnalytics.track(data.ok ? "form_submit" : "form_error", {
+          form_name: "contact",
+        });
+      }
+
       if (data.ok) {
         form.reset();
         if (tsField) {
@@ -44,6 +50,9 @@ function initContactForm() {
         }
       }
     } catch (error) {
+      if (window.KonumAnalytics && typeof window.KonumAnalytics.track === "function") {
+        window.KonumAnalytics.track("form_error", { form_name: "contact", error_type: "network" });
+      }
       showFormStatus(statusEl, false, "Bağlantı hatası. Lütfen tekrar deneyin veya WhatsApp üzerinden yazın.");
     }
   });

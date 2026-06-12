@@ -3,14 +3,33 @@
     "brand": "Konum Online",
     "domain": "konum.online",
     "lang": "tr",
+    "analytics": {
+      "ga4Id": "G-PLACEHOLDER"
+    },
     "contact": {
-      "phone": "TODO",
-      "whatsapp": "905000000000",
-      "email": "TODO",
-      "address": "TODO",
-      "instagram": "TODO",
-      "linkedin": "TODO",
-      "youtube": "TODO"
+      "phoneDisplay": "0532 386 18 37",
+      "phoneTel": "+905323861837",
+      "whatsapp": "905323861837",
+      "whatsappUrl": "https://wa.me/905323861837",
+      "email": "bayram@konum.online",
+      "address": "Fatih Sultan Mehmet Mahallesi, Balkan Caddesi No:62, Meydan İstanbul AVM, 34771 Ümraniye / İstanbul",
+      "addressParts": {
+        "streetAddress": "Fatih Sultan Mehmet Mahallesi, Balkan Caddesi No:62, Meydan İstanbul AVM",
+        "addressLocality": "Ümraniye",
+        "addressRegion": "İstanbul",
+        "postalCode": "34771",
+        "addressCountry": "TR"
+      },
+      "instagram": "https://instagram.com/konumonline",
+      "linkedin": "https://linkedin.com/company/konumonline",
+      "sameAs": [
+        "https://instagram.com/konumonline",
+        "https://linkedin.com/company/konumonline",
+        "https://x.com/konumonline",
+        "https://facebook.com/konumonline",
+        "https://youtube.com/@konumonline",
+        "https://tiktok.com/@konumonline"
+      ]
     },
     "footer": {
       "tagline": "İstanbul'daki işletmeler için Google Haritalar görünürlüğü ve yerel büyüme.",
@@ -27,8 +46,8 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "Konum Online",
-        "description": "TODO"
+        "title": "Konum Online | Google Haritalar & Yerel SEO",
+        "description": "İstanbul işletmeleri için Google Haritalar görünürlüğü, işletme profili yönetimi ve yerel SEO. Mahalle bazlı grid analizi ve ön değerlendirme."
       },
       "header": {
         "brand": "Konum Online",
@@ -280,7 +299,7 @@
           "primary": "Ön Değerlendirme İsteyin",
           "primaryHref": "/iletisim/",
           "secondary": "WhatsApp'tan Yazın",
-          "secondaryHref": "https://wa.me/905000000000?text=Merhaba%2C%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
+          "secondaryHref": "https://wa.me/905323861837?text=Merhaba%2C%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
         }
       }
     },

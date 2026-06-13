@@ -610,18 +610,18 @@
       "timeline": [
         {
           "month": 1,
-          "title": "Analiz ve kategori düzeni",
-          "body": "Grid ile Üsküdar ve Ümraniye hatları haritalandı; birincil kategori Su Tesisatçısı, ikincil Kombi tamircisi olarak netleştirildi. Hizmet alanı beş hedef mahalleyle sınırlandı; NAP ve web sitesi hizalandı."
+          "title": "Önce baktık, kategoriyi düzelttik",
+          "body": "Önce röntgeni çektik: Üsküdar ve Ümraniye hatlarını haritaladık. Ana kategoriyi Su Tesisatçısı, ikincilini Kombi tamircisi yaptık. Hizmet alanını beş hedef mahalleyle sınırladık; sitedeki ve profildeki adres-telefonu aynı hale getirdik."
         },
         {
           "month": 2,
-          "title": "Güven ve acil yanıt sinyalleri",
-          "body": "Gerçek iş sahası fotoğrafları yüklendi; 7/24 ve hızlı yanıt nitelikleri işlendi. Yorum yanıtları hızlandı; WhatsApp ve form talepleri tek akışta izlendi."
+          "title": "Güven ve hızlı yanıt",
+          "body": "Sahadan gerçek iş fotoğrafları ekledik; 7/24 ve hızlı yanıt bilgisini işledik. Yorumlara daha hızlı döndük; WhatsApp ve form taleplerini tek bir akışta toplayıp izledik."
         },
         {
           "month": 3,
-          "title": "Komşu ilçe ince ayarı",
-          "body": "Grid tekrar ölçüldü; zayıf kalan komşu mahalleler için içerik ve hizmet alanı güncellendi. Telefon ve hizmet talebi eğilimleri aylık karşılaştırıldı."
+          "title": "Komşu mahalle ince ayarı",
+          "body": "Röntgeni tekrar çektik; hâlâ zayıf kalan komşu mahalleler için içeriği ve hizmet alanını güncelledik. Telefon ve hizmet talebi hareketlerini ay ay karşılaştırdık."
         }
       ],
       "sectorNotes": [
@@ -633,42 +633,42 @@
       "story": {
         "sections": [
           {
-            "heading": "1 — Bağlam",
+            "heading": "1 — İşletme kim?",
             "paragraphs": [
-              "Anadolu Su Tesisat & Kombi, bu senaryoda Üsküdar ve Ümraniye hattında çalışan hayali bir su tesisatı ve kombi servis işletmesidir. Müşteri iş yerine gelmez; ekip adrese gider. Arama niyeti çoğu zaman acildir: «acil su tesisatçısı», «kombi servisi», «Ümraniye su kaçağı» gibi ifadelerle kullanıcı hemen ulaşılabilir bir usta arar. Bu sektörde Google İşletme Profili'nde doğru kategori, net hizmet alanı ve güncel yorumlar güven üretir; geniş «Tesisatçı» etiketi ve tüm İstanbul'a yayılmış hizmet bölgesi ise algoritmaya zayıf bir sinyal verir.",
-              "Hizmet bölgesi işletmelerinde ölçüm odağı yol tarifi değildir. Müşteri sizi arar, form doldurur veya WhatsApp'tan yazar; telefon aramaları ve hizmet talebi hareketleri bu senaryonun ana metrikleridir. Profilde 7/24 çalışma, hızlı yanıt ve gerçek iş sahası fotoğrafları acil aramalarda seçilme ihtimalini artırır."
+              "Anadolu Su Tesisat & Kombi'yi düşünün: Üsküdar ve Ümraniye'de çalışan, hayali ama tanıdık bir tesisat ve kombi servisi. Burada müşteri dükkâna gelmez, usta adrese gider. İnsanlar da genelde bir dertle arar — su kaçağı, patlayan boru, yanmayan kombi. Telefonu açar, 'Ümraniye su tesisatçısı' ya da 'acil su kaçağı' yazar ve ilk güvendiği ustayı arar. Böyle bir işte profilde kategori doğruysa, hizmet alanı net seçilmişse ve yorumlar tazeyse Google sizi öne çıkarır; 'Tesisatçı' deyip tüm İstanbul'u seçtiyseniz tam tersi olur.",
+              "Bu tür sahaya giden işlerde yol tarifine bakmanın anlamı yok; çünkü müşteri size gelmez. Sizi arar, form doldurur ya da WhatsApp'tan yazar. O yüzden burada iki şeye bakarız: telefon aramaları ve gelen hizmet talepleri. Profilde 7/24 çalıştığınızın yazması, hızlı dönmeniz ve sahadan gerçek fotoğraflar, acil bir aramada sizi seçtiren şeyler."
             ]
           },
           {
-            "heading": "2 — Başlangıç durumu",
+            "heading": "2 — Baştaki durum",
             "paragraphs": [
-              "Senaryonun başında işletme, Google'da genel «Tesisatçı» kategorisinde listeleniyordu; kombi ve acil su aramalarında görünürlük düşüktü. Hizmet alanı fiilen Üsküdar ve Ümraniye sınırlarına yakın olsa da profilde tüm İstanbul seçiliydi — Google bu genişliğe inanmıyor, komşu ilçelerde kaybolmayı beraberinde getiriyordu. Yorumlar iki yıldan eskiydi; bir kısmı farklı hizmet adlarıyla yazılmış, işletme yanıt vermiyordu. Web sitesindeki telefon numarası ve adres satırı profille birebir örtüşmüyordu.",
-              "Acil aramalarda kullanıcı son yorum tarihine, puan dağılımına ve «şimdi açık» bilgisine bakar. Ümraniye'de arama yapan biri, Üsküdar merkezinde iyi sıralanan ama kendi mahallesinde görünmeyen bir ustayı atlar. Telefon eğilimi düşük banddaydı; gelen taleplerin çoğu tavsiye veya eski müşteri kaydından geliyordu. Kombi kış aylarında ek talep üretse de haritada görünmemek bu fırsatı rakiplere bırakıyordu."
+              "Hikâyenin başında işletme Google'da genel 'Tesisatçı' kategorisindeydi; kombi ve acil su aramalarında pek görünmüyordu. Fiilen Üsküdar ve Ümraniye'de çalışıyordu ama profilde tüm İstanbul seçiliydi — Google bu kadar geniş bir iddiaya inanmaz, sizi komşu ilçelerde de kaybeder. Yorumlar iki yıldan eskiydi, bir kısmı bambaşka hizmetlerden bahsediyordu, işletme hiçbirine yanıt vermemişti. Web sitesindeki telefon ve adres de profildekiyle birebir aynı değildi.",
+              "Acil bir aramada insan son yorumun tarihine, puana ve 'şimdi açık mı' bilgisine bakar. Ümraniye'de arayan biri, Üsküdar'da iyi çıkan ama kendi mahallesinde görünmeyen ustayı atlar. Telefon az çalıyordu; gelen işlerin çoğu eski müşteriden ya da tavsiyeden geliyordu. Kış aylarında kombi talebi artsa da, haritada görünmemek bu fırsatı doğrudan rakibe bırakıyordu."
             ]
           },
           {
-            "heading": "3 — Profil aksiyonları",
+            "heading": "3 — Ne yaptık?",
             "paragraphs": [
-              "Birincil kategori «Su Tesisatçısı», ikincil «Kombi tamircisi» olarak düzenlendi. Hizmet alanı Altunizade, Bulgurlu, Çakmak, Finans Merkezi ve Yamanevler gibi beş–yedi mahalleyle daraltıldı. 7/24 ve hızlı yanıt nitelikleri eklendi; gerçek tesisat ve kombi müdahale fotoğrafları yüklendi. Yorum yanıtlarında mahalle ve hizmet adı doğal biçimde geçecek şekilde semantik içerik hedeflendi. NAP tutarlılığı web sitesi, profil ve dizin kayıtları arasında sağlandı."
+              "Ana kategoriyi 'Su Tesisatçısı', ikincilini 'Kombi tamircisi' yaptık. Hizmet alanını Altunizade, Bulgurlu, Çakmak, Finans Merkezi ve Yamanevler gibi beş-yedi mahalleye daralttık. Profile 7/24 ve hızlı yanıt bilgisini ekledik; sahadan gerçek tesisat ve kombi müdahale fotoğrafları yükledik. Yorum yanıtlarında mahalle ve hizmet adı doğal biçimde geçsin diye uğraştık. Web sitesi, profil ve rehber kayıtlarındaki adres-telefonu tek tek aynı hale getirdik."
             ]
           }
         ],
         "grid": {
           "heading": "4 — Görünürlük röntgeni",
-          "intro": "«Acil su tesisatçısı» araması için 5×5 grid ölçümü: merkez kare işletmenin üs mahallesidir. Başlangıçta kendi bölgede yeşilimsi, komşu ilçelerde kırmızı-turuncu band; üçüncü ay sonunda hedef mahallelerde yeşil tonlar güçlenir. Bu, tek sıra rakamı yerine mahalle bazlı dağılımı gösterir.",
+          "intro": "'Acil su tesisatçısı' araması için haritayı 5×5'lik bir ızgaraya böldük; ortadaki kare işletmenin üs mahallesi. Başta kendi bölgesinde yeşilimsi, komşu ilçelerde kırmızı-turuncuydu. Üçüncü ayın sonunda hedef mahallelerde yeşil belirgin biçimde güçlendi. Röntgenin gösterdiği, tek bir sıra numarası değil; mahalle mahalle nerede durduğunuz.",
           "beforeLabel": "Röntgen: Önce",
           "afterLabel": "3. ay sonu",
           "disclaimer": "Grid gösterimi örnek / demo amaçlıdır. İşletme noktası işaretli karedir."
         },
-        "resultsHeading": "6 — Temsili sonuçlar",
-        "timelineHeading": "5 — Üç aylık süreç",
-        "resultsIntro": "Aşağıdaki değerler bu kurgusal senaryo için temsilidir; gerçek bir müşteri sonucu değildir. Ana sayfadaki örnek kartla aynı metrikler kullanılmıştır.",
-        "resultsNote": "Ölçüm odağı yol tarifi değil; Google İşletme Profili içgörülerindeki telefon aramaları ile web sitesi formu ve WhatsApp üzerinden gelen hizmet talepleridir. Acil tesisat aramalarında bu metrikler doğrudan iş hacmiyle ilişkilidir.",
+        "resultsHeading": "6 — Sonuçlar (temsili)",
+        "timelineHeading": "5 — Üç ayda ne yaptık?",
+        "resultsIntro": "Aşağıdaki rakamlar bu kurgusal senaryo için temsilidir; gerçek bir müşteri sonucu değildir. Ana sayfadaki örnek kartla aynı değerleri kullandık.",
+        "resultsNote": "Burada yol tarifine bakmıyoruz; çünkü müşteri size gelmiyor. Baktığımız şey Google İşletme Profili'ndeki telefon aramaları ile siteden gelen form ve WhatsApp talepleri. Acil tesisat aramalarında bu iki sayı, doğrudan iş demek.",
         "conclusions": {
-          "heading": "7 — Bu senaryodan çıkarımlar",
+          "heading": "7 — Çıkarımlar",
           "paragraphs": [
-            "Su tesisatı ve kombi servisi gibi hizmet bölgesi işletmelerinde hiper-yerel odak, «tüm İstanbul» seçiminden daha güvenilir sinyal üretir. Doğru kategori ve daraltılmış hizmet alanı, komşu ilçelerdeki kırmızı bölgeleri yeşile çevirmek için temel adımdır. Yorum tazeliği, 7/24 bilgisi ve gerçek saha fotoğrafları acil aramalarda seçilme oranını destekler. Süreç şeffaftır: önce grid ile nerede kaybolduğunuz görünür, sonra aylık aksiyonlarla telefon ve hizmet talebi eğilimleri izlenir.",
-            "Benzer bir tesisat veya kombi işletmesi için ön değerlendirmede mevcut profil ve grid fotoğrafı çıkarılır; böylece «her yere gidiyoruz» algısı veriyle test edilir. Müşteri size gelmediği için yol tarifi metriği yerine arama ve talep kanallarına odaklanmak daha anlamlıdır."
+            "Su tesisatı ve kombi gibi sahaya giden işlerde 'tüm İstanbul' demek değil, birkaç mahalleye odaklanmak güven verir. Doğru kategori ve daraltılmış hizmet alanı, komşu ilçelerdeki kırmızı bölgeleri yeşile çevirmenin ilk adımı. Yorum tazeliği, 7/24 bilgisi ve sahadan gerçek fotoğraflar da acil aramalarda sizi seçtiren detaylar. Süreç açık: önce röntgenle nerede kaybolduğunuzu görür, sonra her ay telefon ve talep hareketlerini takip ederiz.",
+            "Benzer bir tesisat ya da kombi işletmesi için ilk iş, mevcut profili ve röntgeni çıkarmak olur; böylece 'biz her yere gidiyoruz' algısını gerçek veriyle sınarız. Müşteri size gelmediği için yol tarifi yerine arama ve talep kanallarına bakmak çok daha anlamlı."
           ]
         }
       }

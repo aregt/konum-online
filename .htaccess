@@ -31,18 +31,23 @@ ErrorDocument 404 /404.html
   AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
 
-# Static asset caching (30 days)
+# Static asset caching
+# Images/fonts rarely change → uzun cache. CSS/JS aktif geliştirmede →
+# her istekte ETag ile doğrulansın ki deploy sonrası eski sürüm takılı kalmasın.
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType text/css "access plus 30 days"
-  ExpiresByType application/javascript "access plus 30 days"
   ExpiresByType image/webp "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
-  ExpiresByType font/woff2 "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 365 days"
+  ExpiresByType text/css "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 0 seconds"
 </IfModule>
 
 <IfModule mod_headers.c>
-  <FilesMatch "\.(css|js|webp|svg|woff2)$">
-    Header set Cache-Control "public, max-age=2592000, immutable"
+  <FilesMatch "\.(webp|svg|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
   </FilesMatch>
 </IfModule>

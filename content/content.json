@@ -258,6 +258,16 @@
               { "label": "Telefon Aramaları", "value": "+%29" },
               { "label": "Profil Görüntüleme", "value": "+%67" }
             ]
+          },
+          {
+            "name": "Anadolu Su Tesisat & Kombi",
+            "location": "Üsküdar / Ümraniye",
+            "href": "/senaryolar/anadolu-su-tesisat/",
+            "imageNeutral": true,
+            "stats": [
+              { "label": "Telefon Aramaları", "value": "+%52" },
+              { "label": "Hizmet Talebi (form + WhatsApp)", "value": "+%46" }
+            ]
           }
         ],
         "pills": {
@@ -481,14 +491,26 @@
       ]
     }
   ],
+  "scenarioNav": {
+    "title": "Diğer örnek senaryolar",
+    "backLink": "← Örnek senaryolara dön",
+    "fallbackText": "Tüm örnek senaryolar ana sayfada listelenir.",
+    "fallbackHref": "/#cases",
+    "cta": "Ön Değerlendirme İsteyin"
+  },
   "scenarios": [
     {
       "slug": "moda-dis-klinigi",
       "name": "Moda Diş Kliniği",
       "location": "Kadıköy / Moda",
       "sector": "Sağlık / Diş kliniği",
+      "icon": "dental",
+      "href": "/senaryolar/moda-dis-klinigi/",
+      "navSubtitle": "Sağlık · Kadıköy",
       "image": "case-dental.webp",
       "canonical": "https://konum.online/senaryolar/moda-dis-klinigi/",
+      "disclaimerLead": "Bu bir örnek senaryodur.",
+      "disclaimerBody": "Kurgusal bir işletme üzerinden çalışma modelimizi anlatır; rakamlar temsilidir.",
       "meta": {
         "title": "Moda Diş Kliniği — Örnek Senaryo | Konum Online",
         "description": "Kurgusal Moda Diş Kliniği örneği: Kadıköy'de grid analizi, profil düzeni ve üç aylık yerel görünürlük süreci."
@@ -511,8 +533,13 @@
       "name": "Beyoğlu Burger",
       "location": "Beyoğlu / Cihangir",
       "sector": "Restoran / Burger",
+      "icon": "restaurant",
+      "href": "/senaryolar/beyoglu-burger/",
+      "navSubtitle": "Restoran · Beyoğlu",
       "image": "case-burger.webp",
       "canonical": "https://konum.online/senaryolar/beyoglu-burger/",
+      "disclaimerLead": "Bu bir örnek senaryodur.",
+      "disclaimerBody": "Kurgusal bir işletme üzerinden çalışma modelimizi anlatır; rakamlar temsilidir.",
       "meta": {
         "title": "Beyoğlu Burger — Örnek Senaryo | Konum Online",
         "description": "Kurgusal Beyoğlu Burger örneği: Cihangir'de restoran görünürlüğü, yorum disiplini ve üç aylık süreç."
@@ -535,8 +562,13 @@
       "name": "Şişli Estetik Merkezi",
       "location": "Şişli / Mecidiyeköy",
       "sector": "Güzellik / Estetik merkezi",
+      "icon": "aesthetic",
+      "href": "/senaryolar/sisli-estetik-merkezi/",
+      "navSubtitle": "Estetik · Şişli",
       "image": "case-aesthetic-clinic.webp",
       "canonical": "https://konum.online/senaryolar/sisli-estetik-merkezi/",
+      "disclaimerLead": "Bu bir örnek senaryodur.",
+      "disclaimerBody": "Kurgusal bir işletme üzerinden çalışma modelimizi anlatır; rakamlar temsilidir.",
       "meta": {
         "title": "Şişli Estetik Merkezi — Örnek Senaryo | Konum Online",
         "description": "Kurgusal Şişli Estetik Merkezi örneği: profil güven sinyalleri, grid ve üç aylık yerel görünürlük süreci."
@@ -553,6 +585,93 @@
         { "month": 3, "title": "Görüntülenme ve telefon takibi", "body": "Profil görüntülenmesi ve arama eğilimleri aylık izlendi." }
       ],
       "sectorNotes": ["Uzun araştırma döngüsü", "Güven ve steril ortam görselleri", "Hizmet listesi detayı", "Profil görüntülenmesi metriği"]
+    },
+    {
+      "slug": "anadolu-su-tesisat",
+      "name": "Anadolu Su Tesisat & Kombi",
+      "location": "Üsküdar / Ümraniye",
+      "sector": "Su tesisatı / Kombi servisi",
+      "icon": "plumbing",
+      "href": "/senaryolar/anadolu-su-tesisat/",
+      "navSubtitle": "Tesisat · Üsküdar",
+      "imageNeutral": true,
+      "canonical": "https://konum.online/senaryolar/anadolu-su-tesisat/",
+      "meta": {
+        "title": "Anadolu Su Tesisat & Kombi — Örnek Senaryo | Konum Online",
+        "description": "Kurgusal Anadolu Su Tesisat & Kombi örneği: Üsküdar ve Ümraniye'de acil tesisat aramaları, hizmet alanı daraltma ve üç aylık yerel görünürlük süreci."
+      },
+      "disclaimerLead": "Bu bir örnek senaryodur.",
+      "disclaimerBody": "Kurgusal bir işletme üzerinden çalışma modelimizi anlatır; rakamlar temsilidir.",
+      "stats": [
+        { "label": "Telefon Aramaları", "value": "+%52" },
+        { "label": "Hizmet Talebi (form + WhatsApp)", "value": "+%46" }
+      ],
+      "gridQuery": "acil su tesisatçısı",
+      "timeline": [
+        {
+          "month": 1,
+          "title": "Analiz ve kategori düzeni",
+          "body": "Grid ile Üsküdar ve Ümraniye hatları haritalandı; birincil kategori Su Tesisatçısı, ikincil Kombi tamircisi olarak netleştirildi. Hizmet alanı beş hedef mahalleyle sınırlandı; NAP ve web sitesi hizalandı."
+        },
+        {
+          "month": 2,
+          "title": "Güven ve acil yanıt sinyalleri",
+          "body": "Gerçek iş sahası fotoğrafları yüklendi; 7/24 ve hızlı yanıt nitelikleri işlendi. Yorum yanıtları hızlandı; WhatsApp ve form talepleri tek akışta izlendi."
+        },
+        {
+          "month": 3,
+          "title": "Komşu ilçe ince ayarı",
+          "body": "Grid tekrar ölçüldü; zayıf kalan komşu mahalleler için içerik ve hizmet alanı güncellendi. Telefon ve hizmet talebi eğilimleri aylık karşılaştırıldı."
+        }
+      ],
+      "sectorNotes": [
+        "Acil arama niyeti (su kaçağı, tıkanıklık)",
+        "Hizmet bölgesi işletmesi — müşteri mekâna gelmez",
+        "7/24 ve hızlı yanıt nitelikleri",
+        "Telefon + form + WhatsApp talep metrikleri"
+      ],
+      "story": {
+        "sections": [
+          {
+            "heading": "1 — Bağlam",
+            "paragraphs": [
+              "Anadolu Su Tesisat & Kombi, bu senaryoda Üsküdar ve Ümraniye hattında çalışan hayali bir su tesisatı ve kombi servis işletmesidir. Müşteri iş yerine gelmez; ekip adrese gider. Arama niyeti çoğu zaman acildir: «acil su tesisatçısı», «kombi servisi», «Ümraniye su kaçağı» gibi ifadelerle kullanıcı hemen ulaşılabilir bir usta arar. Bu sektörde Google İşletme Profili'nde doğru kategori, net hizmet alanı ve güncel yorumlar güven üretir; geniş «Tesisatçı» etiketi ve tüm İstanbul'a yayılmış hizmet bölgesi ise algoritmaya zayıf bir sinyal verir.",
+              "Hizmet bölgesi işletmelerinde ölçüm odağı yol tarifi değildir. Müşteri sizi arar, form doldurur veya WhatsApp'tan yazar; telefon aramaları ve hizmet talebi hareketleri bu senaryonun ana metrikleridir. Profilde 7/24 çalışma, hızlı yanıt ve gerçek iş sahası fotoğrafları acil aramalarda seçilme ihtimalini artırır."
+            ]
+          },
+          {
+            "heading": "2 — Başlangıç durumu",
+            "paragraphs": [
+              "Senaryonun başında işletme, Google'da genel «Tesisatçı» kategorisinde listeleniyordu; kombi ve acil su aramalarında görünürlük düşüktü. Hizmet alanı fiilen Üsküdar ve Ümraniye sınırlarına yakın olsa da profilde tüm İstanbul seçiliydi — Google bu genişliğe inanmıyor, komşu ilçelerde kaybolmayı beraberinde getiriyordu. Yorumlar iki yıldan eskiydi; bir kısmı farklı hizmet adlarıyla yazılmış, işletme yanıt vermiyordu. Web sitesindeki telefon numarası ve adres satırı profille birebir örtüşmüyordu.",
+              "Acil aramalarda kullanıcı son yorum tarihine, puan dağılımına ve «şimdi açık» bilgisine bakar. Ümraniye'de arama yapan biri, Üsküdar merkezinde iyi sıralanan ama kendi mahallesinde görünmeyen bir ustayı atlar. Telefon eğilimi düşük banddaydı; gelen taleplerin çoğu tavsiye veya eski müşteri kaydından geliyordu. Kombi kış aylarında ek talep üretse de haritada görünmemek bu fırsatı rakiplere bırakıyordu."
+            ]
+          },
+          {
+            "heading": "3 — Profil aksiyonları",
+            "paragraphs": [
+              "Birincil kategori «Su Tesisatçısı», ikincil «Kombi tamircisi» olarak düzenlendi. Hizmet alanı Altunizade, Bulgurlu, Çakmak, Finans Merkezi ve Yamanevler gibi beş–yedi mahalleyle daraltıldı. 7/24 ve hızlı yanıt nitelikleri eklendi; gerçek tesisat ve kombi müdahale fotoğrafları yüklendi. Yorum yanıtlarında mahalle ve hizmet adı doğal biçimde geçecek şekilde semantik içerik hedeflendi. NAP tutarlılığı web sitesi, profil ve dizin kayıtları arasında sağlandı."
+            ]
+          }
+        ],
+        "grid": {
+          "heading": "4 — Görünürlük röntgeni",
+          "intro": "«Acil su tesisatçısı» araması için 5×5 grid ölçümü: merkez kare işletmenin üs mahallesidir. Başlangıçta kendi bölgede yeşilimsi, komşu ilçelerde kırmızı-turuncu band; üçüncü ay sonunda hedef mahallelerde yeşil tonlar güçlenir. Bu, tek sıra rakamı yerine mahalle bazlı dağılımı gösterir.",
+          "beforeLabel": "Röntgen: Önce",
+          "afterLabel": "3. ay sonu",
+          "disclaimer": "Grid gösterimi örnek / demo amaçlıdır. İşletme noktası işaretli karedir."
+        },
+        "resultsHeading": "6 — Temsili sonuçlar",
+        "timelineHeading": "5 — Üç aylık süreç",
+        "resultsIntro": "Aşağıdaki değerler bu kurgusal senaryo için temsilidir; gerçek bir müşteri sonucu değildir. Ana sayfadaki örnek kartla aynı metrikler kullanılmıştır.",
+        "resultsNote": "Ölçüm odağı yol tarifi değil; Google İşletme Profili içgörülerindeki telefon aramaları ile web sitesi formu ve WhatsApp üzerinden gelen hizmet talepleridir. Acil tesisat aramalarında bu metrikler doğrudan iş hacmiyle ilişkilidir.",
+        "conclusions": {
+          "heading": "7 — Bu senaryodan çıkarımlar",
+          "paragraphs": [
+            "Su tesisatı ve kombi servisi gibi hizmet bölgesi işletmelerinde hiper-yerel odak, «tüm İstanbul» seçiminden daha güvenilir sinyal üretir. Doğru kategori ve daraltılmış hizmet alanı, komşu ilçelerdeki kırmızı bölgeleri yeşile çevirmek için temel adımdır. Yorum tazeliği, 7/24 bilgisi ve gerçek saha fotoğrafları acil aramalarda seçilme oranını destekler. Süreç şeffaftır: önce grid ile nerede kaybolduğunuz görünür, sonra aylık aksiyonlarla telefon ve hizmet talebi eğilimleri izlenir.",
+            "Benzer bir tesisat veya kombi işletmesi için ön değerlendirmede mevcut profil ve grid fotoğrafı çıkarılır; böylece «her yere gidiyoruz» algısı veriyle test edilir. Müşteri size gelmediği için yol tarifi metriği yerine arama ve talep kanallarına odaklanmak daha anlamlıdır."
+          ]
+        }
+      }
     }
   ]
 }

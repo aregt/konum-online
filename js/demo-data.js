@@ -184,6 +184,25 @@
           [8, 6, 5, 6, 9],
         ]),
       },
+      "anadolu-su-tesisat": {
+        business: "Anadolu Su Tesisat & Kombi",
+        area: "Üsküdar / Ümraniye",
+        query: "acil su tesisatçısı",
+        before: buildGrid([
+          [24, 22, 21, 23, 24],
+          [22, 9, 7, 10, 21],
+          [21, 6, 4, 8, 22],
+          [23, 8, 5, 9, 20],
+          [24, 21, 22, 23, 25],
+        ]),
+        after: buildGrid([
+          [7, 5, 5, 6, 7],
+          [5, 4, 3, 4, 5],
+          [5, 3, 2, 3, 5],
+          [6, 4, 3, 4, 6],
+          [8, 6, 5, 6, 8],
+        ]),
+      },
     },
   };
 })();

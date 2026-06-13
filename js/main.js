@@ -177,6 +177,7 @@ function renderVisibilityGrid() {
 }
 
 function renderScenarioGrids() {
+  // exported for JSON-driven scenario pages
   const slug = document.body.dataset.scenario;
   if (!slug) return;
 
@@ -224,6 +225,8 @@ function renderDashboard() {
     })
     .join("");
 }
+
+window.renderScenarioGrids = renderScenarioGrids;
 
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();

@@ -59,8 +59,8 @@
         <strong>${escapeHtml(disclaimerLead)}</strong> ${escapeHtml(disclaimerBody)}
       </div>
       <div class="scenario-nav" data-scenario-nav-mount aria-label="Diğer örnek senaryolar"></div>
-      <noscript class="scenario-nav-noscript">
-        <p><a href="${escapeHtml(ui.fallbackHref)}">${escapeHtml(ui.fallbackText)}</a></p>
+      <noscript>
+        <p class="scenario-nav-noscript"><a href="${escapeHtml(ui.fallbackHref || "/#cases")}">${escapeHtml(ui.fallbackText || "Tüm örnek senaryolar ana sayfada listelenir.")}</a></p>
       </noscript>
       ${sections}
       <h2>${escapeHtml(grid.heading || "3 — Görünürlük röntgeni")}</h2>
@@ -99,11 +99,20 @@
     if (!root || !slug) return;
 
     try {
-      const res = await fetch("/content/content.json");
-      if (!res.ok) return;
-      const data = await res.json();
+      let data;
+      const res = await fetch("/content/content.json", { credentials: "same-origin" });
+      if (res.ok) {
+        data = await res.json();
+      } else {
+        const fallback = await fetch("../../content/content.json", { credentials: "same-origin" });
+        if (!fallback.ok) throw new Error("content.json unavailable");
+        data = await fallback.json();
+      }
       const scenario = (data.scenarios || []).find((s) => s.slug === slug);
-      if (!scenario || !scenario.story) return;
+      if (!scenario || !scenario.story) {
+        root.innerHTML = `<p><a href="/#cases">Örnek senaryolara dön</a></p><p>Senaryo içeriği bulunamadı.</p>`;
+        return;
+      }
 
       root.innerHTML = renderStory(scenario, data.scenarioNav || {});
       if (typeof window.renderScenarioGrids === "function") {
@@ -113,7 +122,7 @@
         window.KonumScenarioNavInit();
       }
     } catch (_err) {
-      root.innerHTML = `<p><a href="/#cases">Örnek senaryolara dön</a></p>`;
+      root.innerHTML = `<p><a href="/#cases">Örnek senaryolara dön</a></p><p>İçerik yüklenemedi. <a href="/#cases">Tüm örnek senaryolar</a> ana sayfada.</p>`;
     }
   }
 

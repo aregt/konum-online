@@ -76,45 +76,6 @@ function initReveal() {
   });
 }
 
-function initCounters() {
-  const counters = document.querySelectorAll(".counter");
-  if (!counters.length) return;
-
-  let hasCounted = false;
-  const counterObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting || hasCounted) return;
-        hasCounted = true;
-
-        counters.forEach((counter) => {
-          const target = parseFloat(counter.getAttribute("data-target"));
-          const isDecimal = counter.getAttribute("data-decimals") === "1";
-
-          const updateCount = () => {
-            const count = parseFloat(counter.innerText);
-            const inc = target / 40;
-
-            if (count < target) {
-              const nextVal = count + inc;
-              counter.innerText = isDecimal ? nextVal.toFixed(1) : String(Math.ceil(nextVal));
-              setTimeout(updateCount, 30);
-            } else {
-              counter.innerText = isDecimal ? target.toFixed(1) : String(target);
-            }
-          };
-
-          updateCount();
-        });
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  const statsStrip = document.querySelector(".stats-strip");
-  if (statsStrip) counterObserver.observe(statsStrip);
-}
-
 function rankToColor(rank) {
   if (rank <= 3) return "#22c55e";
   if (rank <= 7) return "#84cc16";
@@ -190,49 +151,11 @@ function renderScenarioGrids() {
   renderVisibilityGridMount(afterMount, scenario.after, { mini: true });
 }
 
-function trendIcon(trend) {
-  if (trend === "up") return "↑";
-  if (trend === "down") return "↓";
-  if (trend === "flat") return "→";
-  return "•";
-}
-
-function renderDashboard() {
-  const mount = document.getElementById("dashboard-mount");
-  const data = window.KonumDemoData && window.KonumDemoData.dashboard;
-  if (!mount || !data) return;
-
-  mount.innerHTML = data.metrics
-    .map((metric) => {
-      const isActions = metric.id === "recommended-actions" && metric.actions;
-      const actionsList = isActions
-        ? `<ul class="metric-actions">${metric.actions.map((item) => `<li>${item}</li>`).join("")}</ul>`
-        : "";
-
-      return `
-        <article class="metric-card">
-          <div class="metric-head">
-            <span class="metric-label">${metric.label}</span>
-            <span class="metric-trend trend-${metric.trend}" aria-hidden="true">${trendIcon(metric.trend)}</span>
-          </div>
-          <div class="metric-value">
-            <strong>${metric.value}</strong><span>${metric.unit || ""}</span>
-          </div>
-          <p class="metric-trend-label">${metric.trendLabel}</p>
-          ${actionsList}
-        </article>
-      `;
-    })
-    .join("");
-}
-
 window.renderScenarioGrids = renderScenarioGrids;
 
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initReveal();
-  initCounters();
   renderVisibilityGrid();
   renderScenarioGrids();
-  renderDashboard();
 });

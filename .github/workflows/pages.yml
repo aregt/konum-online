@@ -1,0 +1,58 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static artifact (PHP ve gizli dosyalar haric)
+        run: |
+          mkdir -p pages-public
+          rsync -av --delete \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.gstack/' \
+            --exclude='.claude/' \
+            --exclude='.kilo/' \
+            --exclude='.githooks/' \
+            --exclude='_backups/' \
+            --exclude='_arsiv/' \
+            --exclude='scripts/' \
+            --exclude='form/' \
+            --exclude='.ftp-deploy.env' \
+            --exclude='.ftp-deploy.example.env' \
+            --exclude='pages-public/' \
+            ./ pages-public/
+          # GitHub Pages'in CNAME dosyasini koru (varsa)
+          # form/ klasoru bilerek yayin disi: PHP Pages'te calismaz
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages-public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,5 +1,5 @@
 /**
- * Demo verileri — Visibility Grid, Dashboard ve senaryo sayfaları buradan beslenir.
+ * Demo verileri — Visibility Grid ve senaryo sayfaları buradan beslenir.
  * Gerçek API entegrasyonunda yalnızca bu dosya değişir.
  */
 (function () {
@@ -65,66 +65,6 @@
         action:
           "Hizmet alanını 5–7 hedef mahalleyle daraltın; kategori ve yorum tazeliğini bu bölgelere odaklayın. Grid takibiyle hangi sokakta kayıp yaşadığınızı aylık izleyin.",
       },
-    },
-    dashboard: {
-      business: "Kahve Durağı Moda",
-      period: "Son 30 gün (örnek)",
-      metrics: [
-        {
-          id: "visibility-score",
-          label: "Bölgesel görünürlük skoru",
-          value: 62,
-          unit: "/100",
-          trend: "up",
-          trendLabel: "+8 puan",
-        },
-        {
-          id: "phone-trend",
-          label: "Telefon eğilimi",
-          value: 18,
-          unit: "%",
-          trend: "up",
-          trendLabel: "Sektör bandının üstü",
-        },
-        {
-          id: "directions-trend",
-          label: "Yol tarifi eğilimi",
-          value: 24,
-          unit: "%",
-          trend: "up",
-          trendLabel: "Artış eğilimi",
-        },
-        {
-          id: "review-freshness",
-          label: "Yorum tazeliği",
-          value: 78,
-          unit: "/100",
-          trend: "flat",
-          trendLabel: "Stabil",
-        },
-        {
-          id: "profile-completeness",
-          label: "Profil tamlığı",
-          value: 84,
-          unit: "%",
-          trend: "up",
-          trendLabel: "3 alan eksik",
-        },
-        {
-          id: "recommended-actions",
-          label: "Önerilen aksiyonlar",
-          value: 4,
-          unit: "adım",
-          trend: "neutral",
-          trendLabel: "Bu ay öncelik",
-          actions: [
-            "Moda ve Caferağa için hizmet alanı güncellemesi",
-            "Son 90 günde 6 yeni yorum hedefi",
-            "Haftalık gerçek mekân fotoğrafı",
-            "Web sitesi konum sayfası hizalaması",
-          ],
-        },
-      ],
     },
     scenarios: {
       "moda-dis-klinigi": {

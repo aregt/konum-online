@@ -38,15 +38,29 @@
     </div>`;
   }
 
+  async function fetchScenarios() {
+    const urls = ["/content/content.json", "../../content/content.json", "../content/content.json"];
+    let lastError = null;
+    for (const url of urls) {
+      try {
+        const res = await fetch(url, { credentials: "same-origin" });
+        if (!res.ok) continue;
+        const data = await res.json();
+        if (data && Array.isArray(data.scenarios)) return data;
+      } catch (err) {
+        lastError = err;
+      }
+    }
+    throw lastError || new Error("content.json unavailable");
+  }
+
   async function initScenarioNav() {
     const slug = document.body.dataset.scenario;
     const mounts = document.querySelectorAll("[data-scenario-nav-mount]");
     if (!slug || !mounts.length) return;
 
     try {
-      const res = await fetch("/content/content.json");
-      if (!res.ok) return;
-      const data = await res.json();
+      const data = await fetchScenarios();
       const title = (data.scenarioNav && data.scenarioNav.title) || "Diğer örnek senaryolar";
       const items = (data.scenarios || []).filter((s) => s.slug !== slug);
       if (!items.length) return;

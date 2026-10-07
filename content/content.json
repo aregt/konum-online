@@ -7,10 +7,10 @@
       "ga4Id": "G-PLACEHOLDER"
     },
     "contact": {
-      "phoneDisplay": "0532 386 18 37",
-      "phoneTel": "+905323861837",
-      "whatsapp": "905323861837",
-      "whatsappUrl": "https://wa.me/905323861837",
+      "phoneDisplay": "+90 (850) 885 0043",
+      "phoneTel": "+908508850043",
+      "whatsapp": "908508850043",
+      "whatsappUrl": "https://wa.me/908508850043",
       "email": "bayram@konum.online",
       "address": "Fatih Sultan Mehmet Mahallesi, Balkan Caddesi No:62, Meydan İstanbul AVM, 34771 Ümraniye / İstanbul",
       "addressParts": {
@@ -69,10 +69,12 @@
           "Müşteri Kazanın."
         ],
         "accent": "Müşteri Kazanın.",
-        "paragraph": "Kendi dükkanınızda görünür olmanız yetmez. Müşterinizin sizi aradığı her mahallede, her aramada, her anda görünür olmanızı sağlıyoruz.",
+        "paragraph": "Aramalar hangi konumdan gelirse gelsin, algoritmaların önerdiği işletme olun. Haritalardaki potansiyeli gerçek müşteriye dönüştürün.",
         "actions": {
           "primary": "Ön Değerlendirme İsteyin",
-          "secondary": "İşletmenizi Konuşalım"
+          "secondary": "İşletmenizi Konuşalım",
+          "secondaryPhone": "+90 (850) 885 0043",
+          "secondaryTel": "+908508850043"
         },
         "features": [
           "Google İşletme Profili",
@@ -94,39 +96,11 @@
           }
         }
       },
-      "stats": {
-        "items": [
-          {
-            "value": "31",
-            "prefix": "%",
-            "title": "Telefon arama eğilimi",
-            "subtitle": "Optimize profillerde sektör ortalaması"
-          },
-          {
-            "value": "42",
-            "prefix": "%",
-            "title": "Yol tarifi eğilimi",
-            "subtitle": "Yerel arama araştırmaları çerçevesinde"
-          },
-          {
-            "value": "4.8",
-            "decimals": 1,
-            "title": "Yorum puanı bandı",
-            "subtitle": "Aktif profillerde gözlemlenen ortalama"
-          },
-          {
-            "value": "3–5×",
-            "title": "Yerel görünürlük artışı",
-            "subtitle": "Hiper-yerel odakta literatür aralığı"
-          }
-        ]
-      },
       "ecosystem": {
         "tag": "Haritalar Merkezde",
         "title": "360° Yerel Görünürlük Ekosistemi",
         "titleLines": ["360° Yerel Görünürlük", "Ekosistemi"],
         "paragraph": "Google sizi sadece harita profilinizle değerlendirmez. Biz, tüm dijital varlığınızı Google Haritalar görünürlüğünüzü besleyecek şekilde yönetiriz.",
-        "cta": "Tüm Çözümlerimizi Keşfedin",
         "hub": {
           "title": "Google Haritalar Merkezde",
           "lines": ["Google", "Haritalar", "Merkezde"]
@@ -142,25 +116,23 @@
         "phoneAlt": "Konum Online mobil görünümü"
       },
       "problem": {
-        "tag": "Problem",
-        "title": "Neden dükkânınızın önünde görünmek yetmez?",
-        "paragraphs": [
-          "Google Haritalar'da kendi kapınızın önünde görünür olmak, müşterinin sizi gerçekten aradığı her noktada görünür olduğunuz anlamına gelmez. Profilinizi bir kez açıp bıraktığınızda algoritma sizi canlı bir işletme olarak okumaz; eksik alanlar, bayat yorumlar ve geniş hizmet alanı seçimi görünürlüğü mahalle mahalle dağıtır.",
-          "2026 yerel arama standartlarında başarı, sıra numarasından çok telefon araması, yol tarifi ve seçilme oranıyla ölçülür. İşletme sahipleri çoğu zaman sıralamayı yalnızca dükkan içinden kontrol eder; oysa müşteri birkaç sokak öteden arama yaptığında sizi hiç görmez. Bu görünmezlik şoku, kayıp talebin sessiz tarafıdır.",
-          "Konum Online olarak önce nerede kaybolduğunuzu grid ve profil verisiyle gösterir, sonra doğru bölgelerde güçlenmeniz için net bir yol haritası çıkarırız."
-        ],
+        "tag": "Soru",
+        "titleLead": "Haritalarda görünmek harika bir başlangıç.",
+        "titleMain": "Peki potansiyelinizin ne kadarını ciroya dönüştürüyorsunuz?",
+        "paragraph": "Google Haritalar'da yer almak, müşterilerinizin sizi aradığı her sokakta ve her mahallede ilk sırada olduğunuz anlamına gelmez. Google algoritması; eksik profilleri, güncellenmeyen içerikleri ve bayat yorumları cezalandırarak sizi sadece dar bir alana sıkıştırır.",
+        "cardsLead": "Gerçek yerel büyümenin önündeki 3 büyük engel:",
         "cards": [
           {
-            "title": "Görünmezlik şoku",
-            "description": "Dükkanınızın önünde iyi sıralama, yan mahalle veya farklı arama niyetinde kaybolmanızı engellemez. Grid analizi, müşterinin gerçekten baktığı noktaları gösterir."
+            "title": "Kısıtlı Bölge Sıkışması",
+            "description": "İşletmeniz sadece kendi caddenizde üst sıralarda çıkıyor olabilir. Hedefimiz, bu görünürlüğü yan mahallelere ve çevre bölgelere yayarak yeni müşterilere ulaşmaktır."
           },
           {
-            "title": "\"Her yere hizmet\" yanılgısı",
-            "description": "100 km yarıçap veya boş hizmet alanı, Google'a dağınık bir sinyal verir. Gerçekten hizmet verdiğiniz 5–7 mahallede otorite kurmak daha güçlü sonuç üretir."
+            "title": "\"Her Yere Hizmet\" Yanılgısı",
+            "description": "Çok geniş bir hizmet alanı seçmek profilinizin gücünü dağıtır. Nokta atışı mahalle optimizasyonu, Google algoritmasında gerçek bir otorite kurmanızı sağlar."
           },
           {
-            "title": "Sıralama ≠ müşteri",
-            "description": "Üst sıralama tek başına telefonu çaldırmaz. Güncel yorumlar, doğru kategori, tutarlı bilgiler ve güven sinyalleri olmadan görünürlük dönüşüme dönüşmez."
+            "title": "Sıralama ≠ Telefon Araması",
+            "description": "Liste başında olmak tek başına yetmez. Profilinizde güncel yorumlar, profesyonel görseller ve doğru kategoriler yoksa, listede üstte olsanız bile müşteri rakiplerinizi seçer."
           }
         ]
       },
@@ -218,12 +190,6 @@
           }
         ]
       },
-      "dashboard": {
-        "tag": "Aylık Değerlendirme",
-        "title": "Sıralama raporu değil, işinizin gerçek göstergeleri",
-        "paragraph": "Telefon araması, yol tarifi, yorum tazeliği, profil tamlığı — bu veriler Google İşletme Profili'nin kendi kayıtlarından gelir. Her ay birlikte bakar, sonraki adıma birlikte karar veririz.",
-        "disclaimer": "Bu alan örnek gösterim / demo amaçlıdır."
-      },
       "cases": {
         "tag": "Örnek Senaryolar",
         "title": "Örnek Senaryolar: Doğru Yönetim Ne Kazandırır?",
@@ -274,11 +240,6 @@
           "before": "ÖNCE",
           "after": "SONRA"
         }
-      },
-      "istanbulFocus": {
-        "tag": "İstanbul Odağı",
-        "title": "Her semtte değil, doğru bölgelerde güçlenin.",
-        "paragraph": "İstanbul'un her ilçesinde aynı rekabet yoktur. Hizmet alanınızı gerçek talebe göre daraltıp Moda'da güçlü, Üsküdar'da zayıf olduğunuz noktaları ayrı ayrı yönetiriz."
       },
       "faq": {
         "tag": "SSS",
@@ -337,7 +298,7 @@
           "primary": "Ön Değerlendirme İsteyin",
           "primaryHref": "/iletisim/",
           "secondary": "WhatsApp'tan Yazın",
-          "secondaryHref": "https://wa.me/905323861837?text=Merhaba%2C%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
+          "secondaryHref": "https://wa.me/908508850043?text=Merhaba%2C%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
         }
       }
     },

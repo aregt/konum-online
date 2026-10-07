@@ -7,3 +7,6 @@ Thumbs.db
 .gstack/
 _backups/
 .ftp-deploy.env
+.claude/
+.kilo/
+CNAME.example
